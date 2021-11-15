@@ -6,3 +6,5 @@
     - Para correr la app en Android asegurate de tener un emulador corriendo y desde `./FirstApp` ejecutar `npx react-native run-android`
     - Para correr la app en iOS asegurate de tener un simulador corriendo y desde `FirstApp` ejecutar `npx react-native run-ios`
 3. Explora la estructura de los folders.
+
+Basada en esta App que acabamos de crear haremos los ejemplos y retos siguientes debido a que es muy tardado crear una app y no podríamos estarlo haciendo para cada uno de los ejercicios que haremos.
