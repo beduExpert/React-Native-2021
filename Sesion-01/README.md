@@ -1,4 +1,4 @@
-## Sesión 1: Nombre de sesión 🤖
+## Sesión 1: Introducción a React Native 🤖
 
 <img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
@@ -6,19 +6,31 @@
 ### 1. Objetivos :dart: 
 
 - Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Recordar las etiquetas de ReactJS. (JSX)
+- Aprender las etiquetas de React Native y usarlas correctamente para los diferentes sistemas operativos.
+- Explorar la creación de una app en React Native CLI y otra en Expo.
+
 
 ### 2. Contenido :blue_book:
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+React native te ayuda a utilizar un solo **_Code Base_** para crear los archivos necesarios para ambos sist4emas operativos.
+
+React native promete ser el futuro de la programación móvil junto con otras tecnologías.
+
+En este módulo aprenderemos:
+
+- ¿Qué es react native?
+- Componentes principales y nativos
+- React native y ReactJS
+- Usando nuestros primeros componentes
 
 ---
 
-<img src="images/tools.png" align="right" height="90"> 
+<img src="images/tools.png" align="right" height="90">
 
-#### <ins>Tema 1</ins>
+#### <ins>¿Qué es react native?</ins>
 
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
+**React Native** es un framework JavaScript creado originalmente por facebook para crear aplicaciones reales nativas para iOS y Android, basado en la librería de **JavaScript React** para la creación de componentes visuales, cambiando el propósito de los mismos para, en lugar de ser ejecutados en navegador, **correr directamente sobre las plataformas móviles nativa**s, en este caso iOS y Android. Es decir, en lugar de desarrollar una aplicación web híbrida o en HTML5, lo que obtienes como resultado es una **aplicación real nativa**, indistinguible de la que podrías desarrollar con tu código en Objective-C o Java.
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
