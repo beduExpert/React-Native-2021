@@ -2,15 +2,26 @@
 
 ## :wave: Bienvenid@s
 
-Dar la bienvenida al alumno describiendo el contexto general del módulo. (Borrar está linea una vez se hay leido. **Está información se basa en el enlace que se encuentra en la ficha técnica de cada módulo.**
+Este es el módulo de React Native! Donde aprenderemos todo de esta tecnología.
+React native es una librería de JavaScript creada originalmente por Facebook (Meta) que nos ayuda a desarrollar un solo código y desplegar aplicaciones para los dos principales sistemas operativos móviles (Android e iOS).
+
+React native es una excelente opción para la demanda actual y futura de aplicaciones móviles.
 
 ## :dart: Objetivo
 
-Describir el objetivo general del módulo **Obligatorio**. (Borrar está linea una vez se hay leido) 
+Aprenderemos a crear aplicaciones móviles para iOS y Android usando React native. Al final del curso descubrirás que ¡el único límite es tu propia imaginación!
 
 ## :gear: Requerimientos
 
-Describir los requerimientos en caso de que el módulo lo requiera **Obligatorio**. (Borrar está linea una vez se hay leido) 
+Para sacarle el máximo provecho a React native tendremos que operar el sistema operativo MacOS en cualquiera de sus distribuciones recientes (Big sur o Monterey). Esto es debido a que es imposible debuggear nuestro código si no tenemos Xcode y un simulador de iOS, lo cuál es bastante dificil de lograr en el OS Windows o cualquier distrubución de Linux.
+
+¡Si no se cuenta con una Mac aún se puede desarrollar para Android en cualquier otro sitema operativo!
+
+Como podemos leer más a detalle en [Preparando tu entorno](https://reactnative.dev/docs/environment-setup) vamos a necesitar Node, Watchman, React native CLI (React Native command line interface), un JDK, y Android Studio para desarrollar en Android.
+
+Para desarrollar para iOS necesitaremos Node, Watchman, React native CLI (React Native command line interface), Xcode and CocoaPods.
+
+Se tendrá una sesión dedicada a la instalación de todas estas herramientas.
 
 ## 💻 Proyecto
 
