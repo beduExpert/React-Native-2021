@@ -5,7 +5,6 @@
 
 ### 1. Objetivos :dart: 
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
 - Recordar las etiquetas de ReactJS. (JSX)
 - Aprender las etiquetas de React Native y usarlas correctamente para los diferentes sistemas operativos.
 - Explorar la creación de una app en React Native CLI y otra en Expo.
@@ -38,7 +37,7 @@ En este módulo aprenderemos:
 
 <img src="images/structure.png" align="right" height="90"> 
 
-#### <ins>Tema 2</ins>
+#### <ins>Creando una app!</ins>
 
 Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
 
