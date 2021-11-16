@@ -59,10 +59,6 @@ Expo es un framework y una plataforma para aplicaciones universales de React. Es
 
 Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 3`**](./Reto-03)
 ---
 
 ### 3. Postwork :memo:
