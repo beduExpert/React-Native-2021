@@ -31,30 +31,26 @@ En este módulo aprenderemos:
 
 **React Native** es un framework JavaScript creado originalmente por facebook para crear aplicaciones reales nativas para iOS y Android, basado en la librería de **JavaScript React** para la creación de componentes visuales, cambiando el propósito de los mismos para, en lugar de ser ejecutados en navegador, **correr directamente sobre las plataformas móviles nativa**s, en este caso iOS y Android. Es decir, en lugar de desarrollar una aplicación web híbrida o en HTML5, lo que obtienes como resultado es una **aplicación real nativa**, indistinguible de la que podrías desarrollar con tu código en Objective-C o Java.
 
-- [**`EJEMPLO 1`**](./Ejemplo-01)
-
 ---
 
 <img src="images/structure.png" align="right" height="90"> 
 
-#### <ins>Creando una app!</ins>
+#### <ins>Creando una app! (Con React native CLI)</ins>
 
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
+Crear una app es muy sencillo con react native CLI, pasemos al Ejemplo 1
 
-- [**`EJEMPLO 2`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
+- [**`EJEMPLO 1`**](./Ejemplo-01)
+
 ---
 
 <img src="images/emulator.jpg" align="right" height="90"> 
 
-#### <ins>Tema 3</ins>
+#### <ins>Creando una app con Expo</ins>
 
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
+Expo es un framework y una plataforma para aplicaciones universales de React. Es un conjunto de herramientas y servicios construidos alrededor de React Native y plataformas nativas que te ayudan a desarrollar, construir, implementar e iterar rápidamente en iOS, Android y aplicaciones web desde la misma base de código JavaScript / TypeScript.
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 2`**](./Reto-02)
+- [**`EJEMPLO 2`**](./Ejemplo-02)
+
 ---
 
 <img src="images/chaomi.png" align="right" height="110"> 
