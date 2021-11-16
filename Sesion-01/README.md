@@ -55,9 +55,13 @@ Expo es un framework y una plataforma para aplicaciones universales de React. Es
 
 <img src="images/chaomi.png" align="right" height="110"> 
 
-#### <ins>Tema 4</ins>
+#### <ins>Usando nuestros primeros componentes</ins>
 
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
+Basta del análisis, empecemos a usar los componentes que React native nos ofrece.
+
+Empezaremos con el [Ejemplo-03](./Ejemplo-03) donde utilizaremos los componentes principales de React native
+
+- [Ejemplo-03](./Ejemplo-03)
 
 ---
 
