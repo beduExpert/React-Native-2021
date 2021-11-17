@@ -23,7 +23,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <TextInput
-        style={styles.input
+        style={styles.input}
         onChangeText={onChangeFirstNumber}
         value={firstNumber}
         placeholder="First number"
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
+    paddingTop: 20,
     backgroundColor: '#ecf0f1',
     padding: 8,
   },

@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import React, { useState } from 'react';
+import { Text, View, StyleSheet, TextInput } from 'react-native';
 
 const App = () => {
 
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <TextInput
-        style={styles.input
+        style={styles.input}
         onChangeText={onChangeFirstNumber}
         value={firstNumber}
         placeholder="First number"
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
+    paddingTop: 20,
     backgroundColor: '#ecf0f1',
     padding: 8,
   },
