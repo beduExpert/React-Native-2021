@@ -4,7 +4,7 @@ Exploraremos como funcionan los siguientes componentes:
 
 - [ActivityIndicator](./ActivityIndicator.js)
 - [Button](./Button.js)
-- [Flatlist](./Flatlist.js)
+- [FlatList](./FlatList.js)
 - [Image](./Image.js)
 - [ImageBackground](./ImageBackground.js)
 - [KeyboardAvoidingView](./Modal.js)
