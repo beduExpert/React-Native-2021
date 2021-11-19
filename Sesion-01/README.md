@@ -1,6 +1,6 @@
 ## Sesión 1: Introducción a React Native 🤖
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
+<img src="images/react-native.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
@@ -8,7 +8,6 @@
 - Recordar las etiquetas de ReactJS. (JSX)
 - Aprender las etiquetas de React Native y usarlas correctamente para los diferentes sistemas operativos.
 - Explorar la creación de una app en React Native CLI y otra en Expo.
-
 
 ### 2. Contenido :blue_book:
 
@@ -25,7 +24,7 @@ En este módulo aprenderemos:
 
 ---
 
-<img src="images/tools.png" align="right" height="90">
+<img src="images/iphone.jpg" align="right" height="90" hspace="10">
 
 #### <ins>¿Qué es react native?</ins>
 
@@ -33,7 +32,7 @@ En este módulo aprenderemos:
 
 ---
 
-<img src="images/structure.png" align="right" height="90"> 
+<img src="images/rncli.png" align="right" height="90"> 
 
 #### <ins>Creando una app! (Con React native CLI)</ins>
 
@@ -43,7 +42,7 @@ Crear una app es muy sencillo con react native CLI, pasemos al Ejemplo 1
 
 ---
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+<img src="images/expo.png" align="right" height="90"> 
 
 #### <ins>Creando una app con Expo</ins>
 
@@ -53,7 +52,7 @@ Expo es un framework y una plataforma para aplicaciones universales de React. Es
 
 ---
 
-<img src="images/chaomi.png" align="right" height="110"> 
+<img src="images/rncomponents.jpeg" align="right" height="110"> 
 
 #### <ins>Usando nuestros primeros componentes</ins>
 
