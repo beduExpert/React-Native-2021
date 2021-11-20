@@ -111,16 +111,19 @@ const containerStyle: ViewStyle = {
 
 ---
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+<img src="assets/CSS.png" align="right" height="90"> 
 
-#### <ins>Tema 3</ins>
+#### <ins>CSS vs StyleSheet</ins>
 
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
+Veamos esta imagen comparativa:
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 2`**](./Reto-02)
+![Almost CSS](assets/AlmostCSS.png)
+
+Como podemos apreciar, cada propiedad de estilo de StyleSheet es comparable a una propiedad identica en CSS, con la pequeña diferencia de que en StyleSheet se usa el `camelCase` para nombrar propiedades, de tal manera que la propiedad `background-color` de CSS es identica a `backgroundColor` de StyleSheet.
+
+Pasemos a ver un ejemplo de como transormar CSS a StyleSheet
+
+- [**`Ejemplo 2`**](./Ejemplo-02)
 ---
 
 <img src="images/chaomi.png" align="right" height="110"> 
