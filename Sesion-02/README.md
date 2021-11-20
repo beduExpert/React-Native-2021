@@ -70,12 +70,45 @@ Tips para la calidad del código:
 
 <img src="images/structure.png" align="right" height="90"> 
 
-#### <ins>Tema 2</ins>
+#### <ins>StyleSheet vs Objeto plano (plain object)</ins>
 
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
+Hay algo muy importante que debemos aclarar aquí... ¿Hay difencia al usar `StyleSheet.create({ ...styleProps })` a solamente `{ ...styleProps }`?
 
-- [**`EJEMPLO 2`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
+Hay diferentes respuestas a esta pregunta... 
+
+Hay dos mitos bastante populares acerca de los beneficios de usar `StyleSheet.create`
+
+##### Mito 1: `StyleSheet` tiene mejor desempeño
+
+
+No hay absolutamente ninguna diferencia de rendimiento entre `StyleSheet` y un objeto declarado **fuera del render** (sería diferente si estás creando un nuevo objeto dentro del render cada vez). La diferencia de rendimiento es un mito.
+
+El origen del mito probablemente se deba a que el equipo de **React Native** intentó hacer esto, pero no tuvo éxito. En ningún lugar de la [documentación oficial](https://reactnative.dev/docs/stylesheet), mientras que el [código fuente](https://github.com/facebook/react-native/blob/main/Libraries/StyleSheet/StyleSheet.js#L207) menciona que la mejora de desempeño no está implementado:
+
+```JS
+/*
+ * Performance:
+ *
+ *  - Making a stylesheet from a style object makes it possible to refer to it
+ * by ID instead of creating a new style object every time.
+ *  - It also allows to send the style only once through the bridge. All
+ * subsequent uses are going to refer an id (not implemented yet).
+ */
+```
+
+##### Mito 2: `StyleSheet` valida el objecto de estilos en tiempo de compilación (compile time).
+
+Esto no es verdad. JavaScript puro no puede validar objectos en tiempo de compilación.
+
+- Sí lo valida en tiempo de ejecución (Runtime), pero también lo hace cuando pasas un objeto de estilo a un componente. No hay diferencia
+- Sí lo valida en tiempo de compilación (Compile time) **si estás usando Flow o TypeScript**, pero también lo hace cuando pasas el objecto plano como estilo en los props del componente, o si usas correctamente el **TypeHint** como lo podemos ver aquí:
+
+```JS
+const containerStyle: ViewStyle = {
+   ...viewStyleProps
+}
+```
+
 ---
 
 <img src="images/emulator.jpg" align="right" height="90"> 
