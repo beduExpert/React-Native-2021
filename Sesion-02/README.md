@@ -1,6 +1,6 @@
 ## Sesión 2: Componentes y estilos 🤖
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
+<img src="assets/RNStyle.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
@@ -62,13 +62,13 @@ Tips para la calidad del código:
 - Nombrar los estilos es una buena manera de agregar significado a los pequeños componentes.
 
 
-![StyleSheet Preview](./assets/StyleSheet.png)
+![StyleSheet Preview](./assets/StyleSheetComponent.png)
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
 ---
 
-<img src="images/structure.png" align="right" height="90"> 
+<img src="assets/StyleSheet.png" align="right" height="90"> 
 
 #### <ins>StyleSheet vs Objeto plano (plain object)</ins>
 
