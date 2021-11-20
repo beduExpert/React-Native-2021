@@ -1,24 +1,68 @@
-## Sesión 2: Nombre de sesión 🤖
+## Sesión 2: Componentes y estilos 🤖
 
 <img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Identificar las diferencias en estilos en React Native, comparandola con estilos en React JS.
+- Diferenciar conceptos de estilo y componentes.
+- Analizar la estructura y funcionalidad de un sistema de diseño.
+- Crear nuestroprimer componente con estilo.
 
 ### 2. Contenido :blue_book:
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+El estilo es una parte muy importante en React native. React native es básicamente una technología front end, el estilo, los layouts, el renderizado de imagenes y datos en general, las animaciones y todo lo que le importa al frontend de una aplicación le importa a React native. Así que vamos a conocerlo
 
 ---
 
 <img src="images/tools.png" align="right" height="90"> 
 
-#### <ins>Tema 1</ins>
+#### <ins>StyleSheet</ins>
 
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
+StyleSheet es una abstracción de lo que es una CSS StyleSheet
+
+
+```JS
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+
+const App = () => (
+  <View style={styles.container}>
+    <Text style={styles.title}>React Native</Text>
+  </View>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 24,
+    backgroundColor: "#eaeaea"
+  },
+  title: {
+    marginTop: 16,
+    paddingVertical: 8,
+    borderWidth: 4,
+    borderColor: "#20232a",
+    borderRadius: 6,
+    backgroundColor: "#61dafb",
+    color: "#20232a",
+    textAlign: "center",
+    fontSize: 30,
+    fontWeight: "bold"
+  }
+});
+
+export default App;
+```
+
+Tips para la calidad del código:
+
+- Al mover los estilos afuera de la función del componente haces el código más fácil de entender.
+- Nombrar los estilos es una buena manera de agregar significado a los pequeños componentes.
+
+
+![StyleSheet Preview](./assets/StyleSheet.png)
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 

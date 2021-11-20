@@ -27,15 +27,15 @@ Se tendrá una sesión dedicada a la instalación de todas estas herramientas.
 
 Describir el proyecto en caso de que el módulo lo requiera **Obligatorio** .  (Borrar está linea una vez se hay leido)
 
-## :bookmark_tabs: Sesiones
+## :bookmark_tabs: Sesiones 
 
-##### Describir el temario del módulo **Obligatorio** . (Borrar está linea una vez se hay leido) 
-
-- [`Sesión 01:` Fundamentos de React native](./Sesion-01)
-- [`Sesión 02:` Componentes y estilos](./Sesion-02)
-- [`Sesión 03:` Layouts, responsividad y adaptabilidad de UI](./Sesion-03)
-- [`Sesión 04:` Navegación con react navigation](./Sesion-04)
-- [`Sesión 05:` Uso y manejo de estados](./Sesion-05)
-- [`Sesión 06:` Control y validación de entradas](./Sesion-06)
-- [`Sesión 07:` Consumo de APIs](./Sesion-07)
-- [`Sesión 08:` Debuggeando apps creadas con React Native](./Sesion-08)
+| Sesión | Tema                                                         | Descripción                                           |
+|--------|--------------------------------------------------------------|-------------------------------------------------------|
+|    1   | [Fundamentos de React native](./Sesion-01)                   | ¿Qué es React native y como crear apps?               |
+|    2   | [Componentes y estilos](./Sesion-02)                         | Dándole estilo a nuestros componentes                 |
+|    3   | [Layouts, responsividad y adaptabilidad de UI](./Sesion-03)  | iPads, Tablets, iPhones, Smartphones y sus dimensiones|
+|    4   | [Navegación con react navigation](./Sesion-04)               | Apps de más de una sola pantalla                      |
+|    5   | [Uso y manejo de estados](./Sesion-05)                       | Almacenamiento de variables y renderizado de feedback |
+|    6   | [Control y validación de entradas](./Sesion-06)              | Forms, tests, inputs en general.                      |
+|    7   | [Consumo de APIs](./Sesion-07)                               | Client state y Server State                           |
+|    8   | [Debuggeando apps creadas con React Native](./Sesion-08)     | Flipper, React native debugger.                       |
