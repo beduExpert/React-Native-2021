@@ -3,14 +3,14 @@
 <img src="assets/RNStyle.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart: 
+### 1. Objetivos 🎯
 
 - Identificar las diferencias en estilos en React Native, comparandola con estilos en React JS.
 - Diferenciar conceptos de estilo y componentes.
 - Analizar la estructura y funcionalidad de un sistema de diseño.
 - Crear nuestroprimer componente con estilo.
 
-### 2. Contenido :blue_book:
+### 2. Contenido 📘
 
 El estilo es una parte muy importante en React native. React native es básicamente una technología front end, el estilo, los layouts, el renderizado de imagenes y datos en general, las animaciones y todo lo que le importa al frontend de una aplicación le importa a React native. Así que vamos a conocerlo
 
