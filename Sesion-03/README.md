@@ -1,30 +1,31 @@
-## Sesión 3: Nombre de sesión 🤖
+## Sesión 3: Layouts, responsividad y adaptabilidad de UI 🤖
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart: 
+### 1. Objetivos 🎯
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Comprender para que sirven todas las propiedades del Layout
+- Adaptar diseños complejos a nuestros componentes
+- Aplicar la teoría de Yoga Layout en nuestras apps
 
-### 2. Contenido :blue_book:
+## 2. Contenido 📘
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
-
----
-
-<img src="images/tools.png" align="right" height="90"> 
-
-#### <ins>Tema 1</ins>
-
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
-
-- [**`EJEMPLO 1`**](./Ejemplo-01)
+Es hora de hablar de diseños más complejos para nuestras apps, no nos podemos quedar con layouts simples si queremos hacer una app excepcional. En este módulo veremos lo sencillo que es hacer que cualquier Layout se vea simple. 
 
 ---
+#### <ins>¿Qué es Layout?</ins>
 
-<img src="images/structure.png" align="right" height="90"> 
+El Layout es aveces llamado en español "Maquetación". Se refiere a un esquema de distribución de los elementos dentro de un diseño.
+
+En nuestro caso, los elementos con nuestros componentes.
+
+Algunos ejemplos de diferentes distribuciones de elementos pueden verse en la siguiente imagen:
+
+![UI-examples]("./../assets/UI-examples.jpeg)
+
+![UI-examples-2]("./../assets/UI-examples-2.jpeg)
+
+---
 
 #### <ins>Tema 2</ins>
 
