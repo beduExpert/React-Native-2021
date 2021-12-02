@@ -30,3 +30,5 @@ Pasa a ver la [solución](./solucion.tsx).
 Quisieramos aclarar que hay muchas maneras de conseguir lo mismo, si llegaste a algo diferente está bien, mientras se vea igual... pero, ¿usaste un método map? Esa es muy probablemente la manera más elegante de resolver este diseño de UI.
 
 Veamos como lograrlo en el [ejemplo 2](../Ejemplo-02/README.md).
+
+Puedes ver la solución de este ejemplo en [Snack](https://snack.expo.dev/@santiagosiordia/s03---ej01).
