@@ -13,7 +13,7 @@
 Es hora de hablar de diseños más complejos para nuestras apps, no nos podemos quedar con layouts simples si queremos hacer una app excepcional. En este módulo veremos lo sencillo que es hacer que cualquier Layout se vea simple. 
 
 ---
-#### <ins>¿Qué es Layout?</ins>
+#### <ins>Tema 1: ¿Qué es Layout?</ins>
 
 El Layout es aveces llamado en español "Maquetación". Se refiere a un esquema de distribución de los elementos dentro de un diseño.
 
@@ -27,12 +27,13 @@ Algunos ejemplos de diferentes distribuciones de elementos pueden verse en la si
 
 ---
 
-#### <ins>Tema 2</ins>
+#### <ins>Tema 2: Ejercitando Layouts</ins>
 
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
+Es hora de practicar un poco como hacer Layouts personalizados para las apps que queramos nosotros.
 
-- [**`EJEMPLO 2`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
+Vayamos a nuestro primer ejemplo.
+
+- [**`EJEMPLO 1`**](./Ejemplo-01)
 ---
 
 <img src="images/emulator.jpg" align="right" height="90"> 

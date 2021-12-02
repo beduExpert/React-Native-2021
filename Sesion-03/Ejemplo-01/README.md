@@ -2,14 +2,27 @@
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+Tendremos dos objetivos:
+- Desarrollar un layout sencillo.
+- Entender propiedades por defecto de un flexbox.
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el ejemplo.
->Si no es necesario, puedes borrar esta nota.
+Para lograr un layout complicado primero tenemos que entender las propiedades por defecto de un layout sencillo.
 
-Aquí se debe agregar el desarrollo del ejemplo
+Queremos crear el siguiente layout en React Native:
 
+![Ejemplo 01]("./../assets/Ejemplo-01.png)
+
+Hay que tomar en cuenta cuatro cosas:
+
+- El borde de la pantalla está separada de los recuadros por 16px.
+- Cada recuadro entre ellos está separado por 16px.
+- Cada recuadro mide 100px de ancho por 100px de alto.
+- El arreglo de colores es el siguiente:
+
+    `const colors = [ "#cc4bc2", "#dd5e98", "#e16f7c", "#c1ae7c"]`
+
+¿Puedes obtener una pantalla similar antes de ver la solución?
+
+Pasa a ver la [solución](./solucion.tsx).
