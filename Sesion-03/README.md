@@ -45,22 +45,17 @@ Ya entendimos las propiedades por defecto de un layout. Ahora veamos que tenemos
 
 Analizemos el [ejemplo 3](./Ejemplo-03).
 
-Y habiendo entendido el anterior ejemplo, practiquemos nuestros conocimientos con el [siguiente reto](./Reto-01).
-
 - [**`EJEMPLO 3`**](./Ejemplo-03)
-- [**`RETO 1`**](./Reto-01)
 ---
 
-<img src="images/chaomi.png" align="right" height="110"> 
+#### <ins>Tema 4: ¿Sabemos de Layouts?</ins>
 
-#### <ins>Tema 4</ins>
+¿Crees estar listo para aplicar lo que aprendimos aquí? Sabes que cuando tengas dudas puedes preguntarnos lo que quieras... ¿Pero sabes que habilidad es importante en cualquier Programador? saber buscar en la documentación oficial de la tecnología de la que está aprendiendo. Es una cualidad que no se adquiere fácil, lo prometemos, lleva mucho trabajo por detrás y es normal preguntar cuando no encuentras alguna respuesta.
 
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
+Habiendo dicho eso, vayamos a nuestro [primer reto](./Reto-01).
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 3`**](./Reto-03)
+- [**`Reto 1`**](./Reto-01)
+
 ---
 
 ### 3. Postwork :memo:

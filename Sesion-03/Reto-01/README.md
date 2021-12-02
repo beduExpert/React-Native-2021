@@ -1,15 +1,20 @@
-# Reto # - Nombre del reto
+# Reto 1 - Layouts complejos
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+- Aplicar Layouts absolutos
+- Comprender qué es necesario para crear un layout aparentemente complejo
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
+Para este reto, intentaremos replicar el Layout que dicta la siguiente imagen de UI
 
-Aquí se debe agregar el desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
+![reto-01](./assets/reto-01.png)
 
+¿Parece muy complejo no? Por suerte, ya tenemos un poco de este UI empezado en el [ejemplo 3](../Ejemplo-03).
+
+Intenta que tu diseño sea lo más parecido posible a esta imagen. No veas la solución hasta que te sientas seguro de tu resultado o de verdad ya no puedas hacer nada más.
+
+Debemos aceptar que es un reto bastante complejo. ¡Pero imposible no es, Ánimo!
+
+Aquí dejamos la [solución](./solucion.tsx).
