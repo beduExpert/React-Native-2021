@@ -31,21 +31,24 @@ Algunos ejemplos de diferentes distribuciones de elementos pueden verse en la si
 
 Es hora de practicar un poco como hacer Layouts personalizados para las apps que queramos nosotros.
 
-Vayamos a nuestro primer ejemplo.
+Vayamos a nuestro [primer ejemplo](./Ejemplo-01).
+
+Veamos como optimizar un poco de líneas de código en el [segundo ejemplo](./Ejemplo-02).
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
+- [**`EJEMPLO 2`**](./Ejemplo-02)
 ---
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+#### <ins>Tema 3: Layouts complejos</ins>
 
-#### <ins>Tema 3</ins>
+Ya entendimos las propiedades por defecto de un layout. Ahora veamos que tenemos que modificar para que se vea de las maneras que queramos.
 
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
+Analizemos el [ejemplo 3](./Ejemplo-03).
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 2`**](./Reto-02)
+Y habiendo entendido el anterior ejemplo, practiquemos nuestros conocimientos con el [siguiente reto](./Reto-01).
+
+- [**`EJEMPLO 3`**](./Ejemplo-03)
+- [**`RETO 1`**](./Reto-01)
 ---
 
 <img src="images/chaomi.png" align="right" height="110"> 
