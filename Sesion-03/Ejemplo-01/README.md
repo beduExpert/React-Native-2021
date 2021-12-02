@@ -1,4 +1,4 @@
-# Ejemplo # - Nombre del ejemplo
+# Ejemplo 1 - Layout sencillo
 
 ## Objetivo
 
@@ -12,7 +12,7 @@ Para lograr un layout complicado primero tenemos que entender las propiedades po
 
 Queremos crear el siguiente layout en React Native:
 
-![Ejemplo 01]("./../assets/Ejemplo-01.png)
+![Ejemplo 01](assets/Ejemplo-01.png)
 
 Hay que tomar en cuenta cuatro cosas:
 
@@ -26,3 +26,7 @@ Hay que tomar en cuenta cuatro cosas:
 ¿Puedes obtener una pantalla similar antes de ver la solución?
 
 Pasa a ver la [solución](./solucion.tsx).
+
+Quisieramos aclarar que hay muchas maneras de conseguir lo mismo, si llegaste a algo diferente está bien, mientras se vea igual... pero, ¿usaste un método map? Esa es muy probablemente la manera más elegante de resolver este diseño de UI.
+
+Veamos como lograrlo en el [ejemplo 2](../Ejemplo-02/README.md).
