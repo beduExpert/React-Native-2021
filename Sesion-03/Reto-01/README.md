@@ -18,3 +18,7 @@ Intenta que tu diseño sea lo más parecido posible a esta imagen. No veas la so
 Debemos aceptar que es un reto bastante complejo. ¡Pero imposible no es, Ánimo!
 
 Aquí dejamos la [solución](./solucion.tsx).
+
+No te preocupes si no quedó exactamente igual. Si solo te basas en una imagen es dicil calcular los pixeles, margenes, paddings, radios, distancias, etc.
+
+Además cada celular es difenrente, hay márgenes que no se ven en Snack por ejemplo. Cuando podamos darte todos los detalles de un diseño entenderemos que puedes entregar un reto perfecto. Por ahora con que se parezca está bastante bien.
