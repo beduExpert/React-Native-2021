@@ -1,4 +1,4 @@
-# Ejemplo # - Concepto principal de redux
+# Ejemplo 1 - Concepto principal de redux
 
 ## Objetivo
 

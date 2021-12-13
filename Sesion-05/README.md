@@ -22,13 +22,14 @@ Ayuda a escribir apps que se comporten de manera consistente, y pueden ser corri
 
 Puedes usar redux con React o con cualquier otra librería de UI. Solo pesa 2kB, pero tiene un gran ecosistema disponible.
 
-Veamos un ejemplo de como usar Redux en una app.
+Veamos un [ejemplo](./Ejemplo-01) de como usar Redux en una app.
+
+Utilizemos esto en una app de React native en el [segundo ejemplo](./Ejemplo-02)
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
+- [**`EJEMPLO 2`**](./Ejemplo-02)
 
 ---
-
-<img src="images/structure.png" align="right" height="90"> 
 
 #### <ins>Tema 2</ins>
 
