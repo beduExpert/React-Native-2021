@@ -14,11 +14,15 @@ En toda app es necesario persistir datos de una u otra manera, en ocasiones esto
 
 ---
 
-<img src="images/tools.png" align="right" height="90"> 
+#### <ins>Tema 1: Redux</ins>
 
-#### <ins>Tema 1</ins>
+Redux es un contenedor predeciple para applicaciones en JavaScript.
 
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
+Ayuda a escribir apps que se comporten de manera consistente, y pueden ser corridas en diferentes entornos, como en clientes, servidores y apps nativas, y es fácil de testear. Además de esto, provee una gran experiencia de desarrollo.
+
+Puedes usar redux con React o con cualquier otra librería de UI. Solo pesa 2kB, pero tiene un gran ecosistema disponible.
+
+Veamos un ejemplo de como usar Redux en una app.
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
