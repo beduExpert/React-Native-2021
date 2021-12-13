@@ -1,16 +1,16 @@
-## Sesión 5: Nombre de sesión 🤖
-
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
-<div style="text-align: justify;">
+## Sesión 5: Uso y manejo de estados 💽
 
 ### 1. Objetivos :dart: 
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Entender las capacidades de la libreria redux
+- Crear sistemas de manejo de estado global con Redux
+- Entender el Async storage
+- Encriptar información con Securo Store
+- Guardar información no encriptada en Context API
 
 ### 2. Contenido :blue_book:
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+En toda app es necesario persistir datos de una u otra manera, en ocasiones estos datos pueden serbastante útiles en diferentes situaciones, por ejemplo, recordar una tarjeta de crédito. Claramente al guardar una tarjeta de crédito deberíamos encriptar el dato, a diferencia de algunos otros, tal vez el tema de la app, "dark" o "light", ese dato solo guarda una preferencia irrelevante del usuario si alguien lo robara. Para todas estas situaciones usamos una diferente tipo de lugar para guardar las cosas.
 
 ---
 

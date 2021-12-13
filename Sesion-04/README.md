@@ -30,7 +30,7 @@ Exploremos un [ejemplo](https://github.com/react-navigation/react-navigation/tre
 
 ---
 
-#### <ins>Posibilidades</ins>
+#### <ins>Tema 1: Posibilidades</ins>
 
 ¿Qué es navegación y que se puede lograr con esta librería?
 
@@ -40,9 +40,7 @@ Es una pregunta que resolveremos viendo el primer ejemplo de esta lección.
 
 ---
 
-<img src="images/structure.png" align="right" height="90"> 
-
-#### <ins>Tema 2</ins>
+#### <ins>Tema 2: Implementando nuestra primera app con navegación.</ins>
 
 Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
 
