@@ -5,7 +5,7 @@
 - Entender las capacidades de la libreria redux
 - Crear sistemas de manejo de estado global con Redux
 - Entender el Async storage
-- Encriptar información con Securo Store
+- Encriptar información con Secure Store
 - Guardar información no encriptada en Context API
 
 ### 2. Contenido :blue_book:
@@ -31,29 +31,26 @@ Utilizemos esto en una app de React native en el [segundo ejemplo](./Ejemplo-02)
 
 ---
 
-#### <ins>Tema 2</ins>
+#### <ins>Tema 2: Context API </ins>
 
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
+Context nos da una manera de pasar datos a través de el árbol de componentes sin tener que pasar props hacia cada hijo.
 
-- [**`EJEMPLO 2`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
+Por ejemplo, tendrías que pasar datos desde el componente padre de todo hasta el enésimo nivel de componentes.
+
+Vamos a crear una app con Context API en nuestro [tercer ejemplo](./Ejemplo-03).
+
+- [**`EJEMPLO 3`**](./Ejemplo-03)
 ---
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+#### <ins>Tema 3: Secure Store</ins>
 
-#### <ins>Tema 3</ins>
+`expo-secure-store` nos da una manera de encriptar y guardar de manera segura pares key-value localmente en el dispositivo.  
 
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
+- [**`EJEMPLO 4`**](./Ejemplo-04)
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 2`**](./Reto-02)
 ---
 
-<img src="images/chaomi.png" align="right" height="110"> 
-
-#### <ins>Tema 4</ins>
+#### <ins>Tema 4: Async Storage</ins>
 
 Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
 
@@ -62,12 +59,6 @@ Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, 
  + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
 - [**`RETO 3`**](./Reto-03)
 ---
-
-### 3. Postwork :memo:
-
-Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
-
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
 
 <br/>
 

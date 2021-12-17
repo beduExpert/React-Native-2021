@@ -25,7 +25,7 @@ Aquí tenemos un ejemplo:
 
 Lo acomodaremos detrás de la galería de esta manera:
 
-![Galler with background](./assets/Gallery%20with%20Background.png)
+![Gallery with background](./assets/Gallery%20with%20Background.png)
 
 
 

@@ -1,4 +1,4 @@
-# Ejemplo  - Usando Redux en React native
+# Ejemplo 2 - Usando Redux en React native
 
 ## Objetivo
 
