@@ -33,7 +33,7 @@ Describir el proyecto en caso de que el módulo lo requiera **Obligatorio** .  (
 |--------|--------------------------------------------------------------|-------------------------------------------------------|
 |    1   | [Fundamentos de React native](./Sesion-01)                   | ¿Qué es React native y como crear apps?               |
 |    2   | [Componentes y estilos](./Sesion-02)                         | Dándole estilo a nuestros componentes                 |
-|    3   | [Layouts, responsividad y adaptabilidad de UI](./Sesion-03)  | iPads, Tablets, iPhones, Smartphones y sus dimensiones|
+|    3   | [Layouts, responsividad y adaptabilidad de UI](./Sesion-03)  | Columns, row, posiciones absolutas y relativas.       |
 |    4   | [Navegación con react navigation](./Sesion-04)               | Apps de más de una sola pantalla                      |
 |    5   | [Uso y manejo de estados](./Sesion-05)                       | Almacenamiento de variables y renderizado de feedback |
 |    6   | [Control y validación de entradas](./Sesion-06)              | Forms, tests, inputs en general.                      |
