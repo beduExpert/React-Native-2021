@@ -26,3 +26,9 @@ Lo que hace la app es simplemente tener dos pantallas para que el usuario pueda 
 Cuando el usuario presiona el botón de "Sign in" o "Pay". Además de loggear "Ingresado" y "Pagado" a la consola, guardaremos sus datos en la memoria de Expo Secure Store.
 
 Tendremos una tercera pantalla en la que en la pantalla desplegaremos los objetos guardados. Usa el tipo de navegación con el que te sientas más comodo para navegar entre estas pantallas. Puedes repasar la [Sesión 05](../../Sesion-05) si no recuerdas algo de navegación.
+
+---
+
+## Solución
+
+¡Recuerda intentar resolver el reto antes de ver la solución! Una vez que lo hayas intentado puedes dirijirte al [archivo con la solución](./assets/Solucion.tsx).
