@@ -86,13 +86,54 @@ Ejecutamos `npx pod-install`
 ![Manual android changelog 2](./assets/SecureStore-android-changelog2.png)
 ![Manual android changelog 3](./assets/SecureStore-android-changelog3.png)
 
+### Instalando librería
+
+Correremos el siguiente comando para instalar esta librería, ya que `expo` es quien maneja la librería, la añadiremos desde el comando `expo`.
+
+```bash
+expo install expo-secure-store
+```
 ### Verificando que funciona la instalación.
 
 Podemos pegar el siguiente código en nuestra App, veamos si logea bien los resultados a la consola.
 
 ```TS
 
-import Constants from 'expo-constants';
-console.log(Constants.systemFonts);
+import * as SecureStore from 'expo-secure-store';
+console.log(SecureStore);
 
 ```
+
+Nos saldrá un log parecido a este:
+
+![Secure Store object](./assets/Secure-store-object-console.png)
+
+Analizemóslo un poco:
+
+```JSON
+{
+  "AFTER_FIRST_UNLOCK": undefined,
+  "AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY": undefined,
+  "ALWAYS": undefined,
+  "ALWAYS_THIS_DEVICE_ONLY": undefined,
+  "WHEN_PASSCODE_SET_THIS_DEVICE_ONLY": undefined,
+  "WHEN_UNLOCKED": undefined,
+  "WHEN_UNLOCKED_THIS_DEVICE_ONLY": undefined,
+  "deleteItemAsync": [Function deleteItemAsync],
+  "getItemAsync": [Function getItemAsync],
+  "isAvailableAsync": [Function isAvailableAsync],
+  "setItemAsync": [Function setItemAsync]
+}
+```
+
+Este objeto representa todas las utilidades que tiene `SecureStore` como librería.
+
+Los métodos que se pueden distiguir facilmente porque tienen asignado un objeto función:
+
+Ejemplo: `"getItemAsync": [Function getItemAsync]`.
+
+Recordemos que cuando imprimimos una funcion en `JS` sin llamarla, lo que se loggea a la consola es `[Function nameOfTheFunction]`.
+
+¿Qué podemos hacer con esta librería?
+
+Veámoslo en el siguiente [reto](../Reto-01/).

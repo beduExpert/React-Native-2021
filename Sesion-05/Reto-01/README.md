@@ -1,15 +1,28 @@
-# Reto # - Nombre del reto
+# Reto 01 - Secure Store
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+Pongamos en práctica lo que podemos hacer con Expo Secure Store.
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
+En este reto usaremos la app que creamos en el [Ejemplo 04](./../Ejemplo-04).
 
-Aquí se debe agregar el desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
+Usaremos TypeScript, así que aseguremonos de usar Interfaces y Tipos en todas las variables.
 
+- Guardaremos dos objetos en nuestra app: Tarjeta de Crédito y Credenciales de autenticación.
+- Estos datos se guardaran con el key: "cards" y "users", siendo ambos arreglos de tarjetas o usuarios.
+- El arreglo de tarjetas guarda objetos con las propiedades: `cardNumber`, `cardHolder` y `expiryDate`. Otros nombres son bienvenidos también, pero esos tres datos los guardaremos.
+- El arreglo de usuarios guarda objetos con las propiedades: `email` y `password`.
+- Obtendremos estos datos a través de dos pantallas diferentes.
+- Cada pantalla tendrá un formulario para guardar el objeto respectivo, es decir, una pantalla tendrá un formulario simulando tomar un pago de una tarjeta de crédito y guardaremos el objeto "Tarjeta de Crédito/Débito" y otro formulario para simular "Autenticación" y guardaremos las credenciales.
+- Puedes seguir los diseños que se te proponen aquí o crear tus propios diseños.
+
+![Sign in Screen](./assets/SignIn-Screen.png)
+![Payment Screen](./assets/Payment-Screen.png)
+
+Lo que hace la app es simplemente tener dos pantallas para que el usuario pueda "Ingresar" o "Hacer pagos". Todo esto es **simulado.**
+
+Cuando el usuario presiona el botón de "Sign in" o "Pay". Además de loggear "Ingresado" y "Pagado" a la consola, guardaremos sus datos en la memoria de Expo Secure Store.
+
+Tendremos una tercera pantalla en la que en la pantalla desplegaremos los objetos guardados. Usa el tipo de navegación con el que te sientas más comodo para navegar entre estas pantallas. Puedes repasar la [Sesión 05](../../Sesion-05) si no recuerdas algo de navegación.
