@@ -27,6 +27,8 @@ Cuando el usuario presiona el botón de "Sign in" o "Pay". Además de loggear "I
 
 Tendremos una tercera pantalla en la que en la pantalla desplegaremos los objetos guardados. Usa el tipo de navegación con el que te sientas más comodo para navegar entre estas pantallas. Puedes repasar la [Sesión 05](../../Sesion-05) si no recuerdas algo de navegación.
 
+Ya que ahora no nos enfocaremos en controlar y validar entrada, no importa realmente que te enfoques en el tipo de dato que sea email. Lo que nos interesa ahora es entender como funciona el guardado y encriptado que nos ofrece la librería Expo Secure store.
+
 ---
 
 ## Solución
