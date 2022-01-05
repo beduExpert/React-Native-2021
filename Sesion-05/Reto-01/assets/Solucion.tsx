@@ -1,12 +1,15 @@
 import { MaterialIcons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import React, { ComponentProps, FC } from 'react';
+import * as SecureStore from 'expo-secure-store';
+import React, { ComponentProps, FC, useEffect, useState } from 'react';
 import {
   StyleSheet,
   Text,
   TextInput,
+  TextInputProps,
   TouchableOpacity,
+  TouchableOpacityProps,
   View
 } from 'react-native';
 
@@ -21,13 +24,18 @@ const BackgroundDesign: FC = () => {
   );
 };
 
-interface InputProps {
+type InputProps = TextInputProps & {
   icon: MaterialIconName;
   name: string;
   placeholder?: string;
-}
+};
 
-const Input: FC<InputProps> = ({ icon, name, placeholder = null }) => {
+const Input: FC<InputProps> = ({
+  icon,
+  name,
+  placeholder = null,
+  ...props
+}) => {
   return (
     <View style={formStyles.container}>
       <Text style={formStyles.label}>{name}</Text>
@@ -39,35 +47,146 @@ const Input: FC<InputProps> = ({ icon, name, placeholder = null }) => {
           style={formStyles.input}
           placeholder={placeholder ?? name}
           placeholderTextColor="#75757F"
+          {...props}
         />
       </View>
     </View>
   );
 };
 
-interface SubmitButtonProps {
+type SubmitButtonProps = Pick<TouchableOpacityProps, 'onPress'> & {
   text: string;
-}
+};
 
-const SubmitButton: FC<SubmitButtonProps> = ({ text }) => {
+const SubmitButton: FC<SubmitButtonProps> = ({ text, onPress }) => {
   return (
     <View style={buttonStyles.container}>
-      <TouchableOpacity style={buttonStyles.button} activeOpacity={0.7}>
+      <TouchableOpacity
+        style={buttonStyles.button}
+        activeOpacity={0.7}
+        onPress={onPress}>
         <Text style={buttonStyles.text}>{text}</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
+const save = async (key: string, value: Record<string, any>) => {
+  await SecureStore.setItemAsync(key, JSON.stringify(value));
+};
+
+const getValueFor = async (key: string) => {
+  return await SecureStore.getItemAsync(key);
+};
+
 const SignInScreen: FC = () => {
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+
   return (
     <View style={styles.container}>
       <Text style={styles.titleText}>Sweeter</Text>
       <Text style={styles.subtitleText}>Sign in</Text>
-      <Input icon="mail-outline" name="Email" />
-      <Input icon="vpn-key" name="Password" />
-      <SubmitButton text="Sign in" />
+      <Input
+        icon="mail-outline"
+        name="Email"
+        value={email}
+        onChangeText={setEmail}
+      />
+      <Input
+        icon="vpn-key"
+        name="Password"
+        value={password}
+        onChangeText={setPassword}
+      />
+      <SubmitButton
+        text="Sign in"
+        onPress={() =>
+          save('user', {
+            email,
+            password,
+          })
+        }
+      />
       <BackgroundDesign />
+    </View>
+  );
+};
+
+const PaymentScreen: FC = () => {
+  const [card, setCard] = useState<string>('');
+  const [name, setName] = useState<string>('');
+  const [date, setDate] = useState<string>('');
+  const [cvv, setCvv] = useState<string>('');
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.subtitleText}>Payment</Text>
+      <Input
+        icon="credit-card"
+        name="Card number"
+        onChangeText={setCard}
+        value={card}
+      />
+      <Input
+        icon="person"
+        name="Full name"
+        onChangeText={setName}
+        value={name}
+      />
+      <Input
+        icon="date-range"
+        name="Expiry date"
+        placeholder="mm/yy"
+        onChangeText={setDate}
+        value={date}
+      />
+      <Input icon="vpn-key" name="CVV" onChangeText={setCvv} value={cvv} />
+      <SubmitButton
+        text="Pay"
+        onPress={() =>
+          save('card', {
+            card,
+            name,
+            date,
+            cvv,
+          })
+        }
+      />
+      <BackgroundDesign />
+    </View>
+  );
+};
+
+const StatusScreen: FC = () => {
+  const [user, setUser] = useState<null | string>(null);
+  const [card, setCard] = useState<null | string>(null);
+  const [status, setStatus] = useState<string>('loading');
+
+  const getStatus = async () => {
+    try {
+      setStatus('loading');
+      const securedUser = await getValueFor('user');
+      const securedCard = await getValueFor('card');
+      setUser(securedUser);
+      setCard(securedCard);
+      setStatus('success');
+    } catch (err) {
+      setStatus('error');
+    }
+  };
+
+  useEffect(() => {
+    getStatus();
+  }, []);
+
+  return (
+    <View style={styles.container}>
+      <Text>Status</Text>
+      <Text>User</Text>
+      <Text>{status === 'loading' ? 'loading' : user}</Text>
+      <Text>Card</Text>
+      <Text>{status === 'loading' ? 'loading' : card}</Text>
     </View>
   );
 };
@@ -89,7 +208,7 @@ const App: FC = () => {
         />
         <Tab.Screen
           name="Payment"
-          component={SignInScreen}
+          component={PaymentScreen}
           options={{
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="payment" color={color} size={size} />
@@ -98,11 +217,12 @@ const App: FC = () => {
         />
         <Tab.Screen
           name="Status"
-          component={SignInScreen}
+          component={StatusScreen}
           options={{
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="data-usage" color={color} size={size} />
             ),
+            unmountOnBlur: true,
           }}
         />
       </Tab.Navigator>
@@ -146,6 +266,7 @@ const styles = StyleSheet.create({
     flex: 1,
     zIndex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
     textAlign: 'center',
     color: 'black',
   },
@@ -158,6 +279,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: 'center',
     color: 'black',
+    marginBottom: 32,
   },
 });
 
@@ -167,7 +289,7 @@ const formStyles = StyleSheet.create({
   },
   label: {
     color: 'black',
-    fontSize: 16,
+    fontSize: 12,
     marginLeft: 15,
   },
   inputContainer: {

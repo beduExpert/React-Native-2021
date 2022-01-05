@@ -11,7 +11,7 @@ En este reto usaremos la app que creamos en el [Ejemplo 04](./../Ejemplo-04).
 Usaremos TypeScript, así que aseguremonos de usar Interfaces y Tipos en todas las variables.
 
 - Guardaremos dos objetos en nuestra app: Tarjeta de Crédito y Credenciales de autenticación.
-- Estos datos se guardaran con el key: "cards" y "users", siendo ambos arreglos de tarjetas o usuarios.
+- Estos datos se guardaran con el key: "card" y "user".
 - El arreglo de tarjetas guarda objetos con las propiedades: `cardNumber`, `cardHolder` y `expiryDate`. Otros nombres son bienvenidos también, pero esos tres datos los guardaremos.
 - El arreglo de usuarios guarda objetos con las propiedades: `email` y `password`.
 - Obtendremos estos datos a través de dos pantallas diferentes.
@@ -32,3 +32,5 @@ Tendremos una tercera pantalla en la que en la pantalla desplegaremos los objeto
 ## Solución
 
 ¡Recuerda intentar resolver el reto antes de ver la solución! Una vez que lo hayas intentado puedes dirijirte al [archivo con la solución](./assets/Solucion.tsx).
+
+También puedes dirigirte a [este repositorio](https://github.com/SantiagoSiordia/ExpoSecureStore). Donde podrás descargar y correr la app localmente por si algo no sale bien.
