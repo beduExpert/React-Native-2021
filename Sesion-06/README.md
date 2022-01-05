@@ -13,7 +13,19 @@ O podríamos usar Formik, que nos tiene ya soluciones a esto y más.
 
 ---
 
-#### <ins>Tema 1</ins>
+#### <ins>Tema 1: Formik Básico</ins>
+
+Para instalar formik debemos correr en nuestro proyecto:
+
+```bash
+yarn add formik
+```
+
+Y Yup para usar validaciones
+
+```
+yarn add yup
+```
 
 Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
 
