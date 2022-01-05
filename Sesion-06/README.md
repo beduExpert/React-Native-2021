@@ -1,20 +1,17 @@
-## Sesión 6: Nombre de sesión 🤖
+## Sesión 6: Control y validación de entradas 🎫
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
-<div style="text-align: justify;">
+### 1. Objetivos 🎯
 
-### 1. Objetivos :dart: 
+- Conocer las utilidades de Formik.
+- Crear Formularios controlados y seguros.
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+### 2. Contenido 📘
 
-### 2. Contenido :blue_book:
+Pudimos ver en el [anterior Reto](../sesion-05/../Sesion-01/Reto-01) que es muy fácil hacer formularios inservibles. Nuestros formularios eran bastante inútiles desde el punto de vista de seguridad y control. Claro... podríamos crear por nuestra cuenta algunas maneras de agregar seguridad además de agregar funcionalidad visual a los inputs. Por ejemplo, sería genial como experiencia de usuario que el input donde estés escribiendo tenga algún Feedback visual, tal vez que cambie de color cuando su propiedad `focused` sea verdadera, pero piensa en que necesitaríamos un `React.useState` mas. Podríamos restringir la entrada de textos de alguna manera... tal vez utilizando solo un tipo de teclado específico del sistema operativo, pero aún así podrías pegar strings de algún otro lugar... de tal manera que además tendríamos que hacer que de alguna manera el input no acepte pegar texto... etc.
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+O podríamos usar Formik, que nos tiene ya soluciones a esto y más.
 
 ---
-
-<img src="images/tools.png" align="right" height="90"> 
 
 #### <ins>Tema 1</ins>
 
