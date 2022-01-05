@@ -1,5 +1,16 @@
-import React, { FC } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import React, { ComponentProps, FC } from 'react';
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View
+} from 'react-native';
+
+type MaterialIconName = ComponentProps<typeof MaterialIcons>['name'];
 
 const BackgroundDesign: FC = () => {
   return (
@@ -10,23 +21,92 @@ const BackgroundDesign: FC = () => {
   );
 };
 
-const Input: FC = () => {
+interface InputProps {
+  icon: MaterialIconName;
+  name: string;
+  placeholder?: string;
+}
+
+const Input: FC<InputProps> = ({ icon, name, placeholder = null }) => {
   return (
-    <View>
-      <Text style={formStyles.label}>Input</Text>
+    <View style={formStyles.container}>
+      <Text style={formStyles.label}>{name}</Text>
+      <View style={formStyles.inputContainer}>
+        <View style={formStyles.iconContainer}>
+          <MaterialIcons name={icon} size={24} color="black" />
+        </View>
+        <TextInput
+          style={formStyles.input}
+          placeholder={placeholder ?? name}
+          placeholderTextColor="#75757F"
+        />
+      </View>
     </View>
   );
 };
 
-const App: FC = () => {
+interface SubmitButtonProps {
+  text: string;
+}
+
+const SubmitButton: FC<SubmitButtonProps> = ({ text }) => {
+  return (
+    <View style={buttonStyles.container}>
+      <TouchableOpacity style={buttonStyles.button} activeOpacity={0.7}>
+        <Text style={buttonStyles.text}>{text}</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+const SignInScreen: FC = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.sweeterText}>Sweeter</Text>
+      <Text style={styles.titleText}>Sweeter</Text>
       <Text style={styles.subtitleText}>Sign in</Text>
-      <Input />
-      <Input />
+      <Input icon="mail-outline" name="Email" />
+      <Input icon="vpn-key" name="Password" />
+      <SubmitButton text="Sign in" />
       <BackgroundDesign />
     </View>
+  );
+};
+
+const Tab = createBottomTabNavigator();
+
+const App: FC = () => {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen
+          name="SignIn"
+          component={SignInScreen}
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons name="login" color={color} size={size} />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Payment"
+          component={SignInScreen}
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons name="payment" color={color} size={size} />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Status"
+          component={SignInScreen}
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons name="data-usage" color={color} size={size} />
+            ),
+          }}
+        />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 };
 
@@ -69,7 +149,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'black',
   },
-  sweeterText: {
+  titleText: {
     fontSize: 60,
     textAlign: 'center',
     color: 'black',
@@ -82,9 +162,51 @@ const styles = StyleSheet.create({
 });
 
 const formStyles = StyleSheet.create({
+  container: {
+    marginHorizontal: 48,
+  },
   label: {
     color: 'black',
     fontSize: 16,
+    marginLeft: 15,
+  },
+  inputContainer: {
+    backgroundColor: '#A5D1FA',
+    height: 30,
+    borderRadius: 15,
+    paddingRight: 15,
+    justifyContent: 'center',
+    flexDirection: 'row',
+    width: '100%',
+    marginBottom: 8,
+  },
+  iconContainer: {
+    height: 30,
+    width: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  input: {
+    width: '80%',
+  },
+});
+
+const buttonStyles = StyleSheet.create({
+  button: {
+    backgroundColor: '#5071AF',
+    marginHorizontal: 48,
+    height: 30,
+    borderRadius: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  container: {
+    width: '100%',
+    marginTop: 32,
+  },
+  text: {
+    color: 'white',
+    fontSize: 14,
   },
 });
 

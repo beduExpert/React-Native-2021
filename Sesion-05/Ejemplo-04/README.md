@@ -86,7 +86,7 @@ Ejecutamos `npx pod-install`
 ![Manual android changelog 2](./assets/SecureStore-android-changelog2.png)
 ![Manual android changelog 3](./assets/SecureStore-android-changelog3.png)
 
-### Instalando librería
+## Instalando librería
 
 Correremos el siguiente comando para instalar esta librería, ya que `expo` es quien maneja la librería, la añadiremos desde el comando `expo`.
 
