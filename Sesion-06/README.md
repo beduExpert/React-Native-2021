@@ -27,7 +27,9 @@ Y Yup para usar validaciones
 yarn add yup
 ```
 
-Agreguemos en la app de nuestro anterior Reto un poco de Control con Formik en el [Ejemplo 01](./Ejemplo-01)
+Agreguemos en la app de nuestro anterior Reto un poco de Control con Formik en el [Ejemplo 01](./Ejemplo-01).
+
+Después de completar el anterior ejemplo, podemos probar nuestros conocimientos en el [Reto 01](./Reto-01)
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 

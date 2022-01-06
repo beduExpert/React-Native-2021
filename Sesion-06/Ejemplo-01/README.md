@@ -148,6 +148,43 @@ La magía de la librería viene después, ¡apenas comenzamos en esto!
 
 El código completo puedes verlo en este [link](https://github.com/SantiagoSiordia/ExampleApp/tree/s06-e01).
 
+También puedes ver el siguiente snippet de código del resultado final del componente `SignInScreen`:
+
+```tsx
+// ... Más código
+const SignInScreen: FC = () => {
+  const signInForm = useFormik({
+    initialValues: {
+      email: '',
+      password: '',
+    },
+    onSubmit: values => save('user', values),
+  });
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.titleText}>Sweeter</Text>
+      <Text style={styles.subtitleText}>Sign in</Text>
+      <Input
+        icon="mail-outline"
+        name="Email"
+        value={signInForm.values.email}
+        onChangeText={signInForm.handleChange('email')}
+      />
+      <Input
+        icon="mail-outline"
+        name="Email"
+        value={signInForm.values.password}
+        onChangeText={signInForm.handleChange('password')}
+      />
+      <SubmitButton text="Sign in" onPress={signInForm.handleSubmit} />
+      <BackgroundDesign />
+    </View>
+  );
+};
+// ... Más código
+```
+
 ## Recursos
 
 - [**`ExampleApp: s05-r01`**](https://github.com/SantiagoSiordia/ExampleApp/tree/s05-r01)
