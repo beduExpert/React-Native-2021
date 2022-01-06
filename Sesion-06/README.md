@@ -27,7 +27,7 @@ Y Yup para usar validaciones
 yarn add yup
 ```
 
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
+Agreguemos en la app de nuestro anterior Reto un poco de Control con Formik en el [Ejemplo 01](./Ejemplo-01)
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
