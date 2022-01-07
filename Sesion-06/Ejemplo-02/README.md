@@ -44,3 +44,20 @@ Podemos intuir del esquema que queremos algunas cosas de cada campo:
 
 - Para el campo **password** queremos que algunas cosas sean similares al de email, por ejemplo queremos que sea un string y que no se pueda dejar vacío. Pero esta vez también queremos que tenga un mínimo y un máximo, por eso agregamos los métodos `min` y `max` de Yup, a estos se les pasa como primer argumento el número que tomarán para validar la longitud del string. Además de todo lo anterior, queremos que cumpla con otros requisitos, por el momento solo queremos que acepte letras de la A a la Z en mayúsculas y minúsculas, si recuerdas tus lecciones de JavaScript puro, recordarás que una expresion regular ó **REGEX** es la forma ideal de limitar patrones para strings.
 
+Ahora queda agregar este esquema de validación a Formik, y lo hacemos de la siguiente manera:
+
+```tsx
+const signInForm = useFormik({
+  initialValues: {
+    email: '',
+    password: '',
+  },
+  onSubmit: values => save('user', values),
+  validationSchema: SigninSchema,
+});
+```
+
+Como podemos ver aquí agregamos el esquema de validación `SigninSchema` asginándoselo a `validationSchema` en el objeto de opciones que le pasamos al hook de `useKormik`.
+
+Ahora si intentas llenar el formulario con datos invalidos, no te dejará hacerle submit a los datos.
+

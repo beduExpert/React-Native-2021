@@ -113,8 +113,8 @@ Lo mismo haremos con nuestro segundo `Input` esta vez se trata del input del pas
 
 ```tsx
 <Input
-    icon="mail-outline"
-    name="Email"
+    icon="vpn-key"
+    name="Password"
     value={signInForm.values.password}
     onChangeText={signInForm.handleChange('password')}
 />
@@ -172,8 +172,8 @@ const SignInScreen: FC = () => {
         onChangeText={signInForm.handleChange('email')}
       />
       <Input
-        icon="mail-outline"
-        name="Email"
+        icon="vpn-key"
+        name="Password"
         value={signInForm.values.password}
         onChangeText={signInForm.handleChange('password')}
       />
