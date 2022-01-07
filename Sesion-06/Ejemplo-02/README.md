@@ -61,3 +61,75 @@ Como podemos ver aquí agregamos el esquema de validación `SigninSchema` asgin�
 
 Ahora si intentas llenar el formulario con datos invalidos, no te dejará hacerle submit a los datos.
 
+¿No sería genial que el usuario supiera si sus inputs son válidos?, también sería una gran idea bloquear el botón de Sign in si algo del formulario no es válido, hagamos esto facilmente con la ayuda de Formik.
+
+Con el objetivo de agregar un poco de lógica de nuevos estilos, vamos a modificar el `SubmitButton` de la siguiente manera:
+
+```tsx
+type SubmitButtonProps = TouchableOpacityProps & {
+  text: string;
+};
+
+const SubmitButton: FC<SubmitButtonProps> = ({ text, ...props }) => {
+  return (
+    <View style={buttonStyles.container}>
+      <TouchableOpacity
+        style={StyleSheet.flatten([
+          buttonStyles.button,
+          {
+            backgroundColor: props.disabled
+              ? 'rgba(80, 113, 175, 0.4)'
+              : 'rgb(80, 113, 175)',
+          },
+        ])}
+        activeOpacity={0.7}
+        {...props}>
+        <Text style={buttonStyles.text}>{text}</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+```
+
+De tal forma que si a este componente lo renderizamos con el prop `disabled` como `true` o como `false` modifica su color, habiendo hecho esto, podemos eliminar la definición de `backgrounColor` en `buttonStyles.button`, y ahora simplemente nos quedaría así:
+
+```tsx
+const buttonStyles = StyleSheet.create({
+  button: {
+    marginHorizontal: 48,
+    height: 30,
+    borderRadius: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  // Otros estilos
+});
+```
+
+Ahora podemos modificar el prop `disabled` en el `SubmitButton` que usamos en `SignInScreen`:
+
+```tsx
+<SubmitButton
+  text="Sign in"
+  onPress={signInForm.handleSubmit}
+  disabled={!signInForm.isValid} // <---- Agregamos este prop
+/>
+```
+
+Lo que hará esa nueva línea de código es que cambia el prop `disabled` de `true` a `false` cuando Formik determine que el formulario es válido, con base en el esquema de validación de Yup.
+
+Ahora nuestra pantalla lucirá de la siguiente manera cuando esté vacía:
+
+![InvalidSignInScreenEmpty](./assets/InvalidSignInScreenEmpty.png)
+
+Aquí se puede notar el cambio de color en el botón.
+
+En la siguiente imagen podemos ver que aunque llenemos los campos, si no es información valida, formik no permite que el botón se habilite, debido a que valida por nosotros la información.
+
+![InvalidSingInFormFull](./assets/InvalidSingInFormFull.png)
+
+Y en la siguiente imagen podemos ver información válida y podemos ver que el botón se habilita.
+
+![ValidSignInForm](./assets/ValidSignInForm.png)
+
+Cool, ¿no?
