@@ -36,6 +36,6 @@ Describir el proyecto en caso de que el módulo lo requiera **Obligatorio** .  (
 |    3   | [Layouts, responsividad y adaptabilidad de UI](./Sesion-03)  | Columns, row, posiciones absolutas y relativas.       |
 |    4   | [Navegación con react navigation](./Sesion-04)               | Apps de más de una sola pantalla                      |
 |    5   | [Uso y manejo de estados](./Sesion-05)                       | Almacenamiento de variables y renderizado de feedback |
-|    6   | [Control y validación de entradas](./Sesion-06)              | Forms, tests, inputs en general.                      |
+|    6   | [Control y validación de entradas](./Sesion-06)              | Forms, texts, inputs en general.                      |
 |    7   | [Consumo de APIs](./Sesion-07)                               | Client state y Server State                           |
 |    8   | [Debuggeando apps creadas con React Native](./Sesion-08)     | Flipper, React native debugger.                       |
