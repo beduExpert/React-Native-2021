@@ -26,15 +26,21 @@ import * as Yup from 'yup';
 El esquema luce de la siguiente manera
 
 ```ts
-const SignupSchema = Yup.object().shape({
-   firstName: Yup.string()
-     .min(2, 'Too Short!')
-     .max(50, 'Too Long!')
-     .required('Required'),
-   lastName: Yup.string()
-     .min(2, 'Too Short!')
-     .max(50, 'Too Long!')
-     .required('Required'),
-   email: Yup.string().email('Invalid email').required('Required'),
+const SigninSchema = Yup.object().shape({
+  email: Yup.string() // Que el input sea de tipo string
+    .required('Required') // Que no se pueda dejar vacío
+    .email('Must be a valid email address'), // Que tenga el formato de un email
+  password: Yup.string() // Que el input sea de tipo string
+    .min(8, 'Too Short!') // Que no sea menor a 8 caracteres
+    .max(25, 'Too Long!') // Que no sea mayor a 25 caracteres
+    .match(/[A-Za-z]/, 'Only latin characters') // Que solo se incluyan letras mayúsculas y minúsculas
+    .required('Required'), // Que no se pueda dejar vacío
 });
 ```
+
+Podemos intuir del esquema que queremos algunas cosas de cada campo:
+
+- Queremos que el **email** sea un `string` no un `number`, `object` o cualquier otro tipo de dato, es por eso que lo inicializamos con `Yup.string()`. El email no puede dejarse vacío, es por eso que le concatenamos el método `required` de Yup. Tampoco queremos que sea cualquier string, queremos validar que tenga el formato válido de un email, es por eso que le concatenamos también el método `email` de Yup.
+
+- Para el campo **password** queremos que algunas cosas sean similares al de email, por ejemplo queremos que sea un string y que no se pueda dejar vacío. Pero esta vez también queremos que tenga un mínimo y un máximo, por eso agregamos los métodos `min` y `max` de Yup, a estos se les pasa como primer argumento el número que tomarán para validar la longitud del string. Además de todo lo anterior, queremos que cumpla con otros requisitos, por el momento solo queremos que acepte letras de la A a la Z en mayúsculas y minúsculas, si recuerdas tus lecciones de JavaScript puro, recordarás que una expresion regular ó **REGEX** es la forma ideal de limitar patrones para strings.
+
