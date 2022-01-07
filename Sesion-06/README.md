@@ -32,17 +32,17 @@ Agreguemos en la app de nuestro anterior Reto un poco de Control con Formik en e
 Después de completar el anterior ejemplo, podemos probar nuestros conocimientos en el [Reto 01](./Reto-01)
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
+- [**`RETO 1`**](./Reto-01)
 
 ---
 
-<img src="images/structure.png" align="right" height="90"> 
+#### <ins>Tema 2: Formik para mejorar UX</ins>
 
-#### <ins>Tema 2</ins>
-
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
+Habiendo refactorizado los formularios de nuestra app de ejemplo podemos notar que no hacen nada diferente aún a haberlos creado con estados regulares de `React.useState`. Hágamos ahora algunas mejoras para sacarle provecho a esta librería en el siguiente [ejemplo](./Ejemplo-02).
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
+- 
 ---
 
 <img src="images/emulator.jpg" align="right" height="90"> 
