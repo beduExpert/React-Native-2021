@@ -40,12 +40,12 @@ Después de completar el anterior ejemplo, podemos probar nuestros conocimientos
 
 Habiendo refactorizado los formularios de nuestra app de ejemplo podemos notar que no hacen nada diferente aún a haberlos creado con estados regulares de `React.useState`. Hágamos ahora algunas mejoras para sacarle provecho a esta librería en el siguiente [ejemplo](./Ejemplo-02).
 
-- [**`EJEMPLO 2`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
-- 
----
+Habiendo completado el segundo ejemplo, podemos intentar mejorar aún más la experiencia del usuario en nuestro [tercer ejemplo](./Ejemplo-03).
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+- [**`EJEMPLO 2`**](./Ejemplo-02)
+- [**`EJEMPLO 3`**](./Ejemplo-03)
+
+---
 
 #### <ins>Tema 3</ins>
 
