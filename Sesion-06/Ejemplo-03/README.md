@@ -150,23 +150,14 @@ const Input: FC<InputProps> = ({
       <Text
         style={StyleSheet.flatten([ // Agregamos el flatten para combinar dos o más objetos de estilo
           formStyles.label,
-          error // La variable error definirá que estilo queremos cuando haya un error
-            ? {
-                color: '#c42348',
-              }
-            : {},
+          error ? formStyles.errorTextColor : {}, // La variable error definirá que estilo queremos cuando haya un error
         ])}>
         {name}
       </Text>
       <View
         style={StyleSheet.flatten([ // Agregamos el flatten para combinar dos o más objetos de estilo
           formStyles.inputContainer,
-          error // La variable error definirá que estilo queremos cuando haya un error
-            ? {
-                borderWidth: 2,
-                borderColor: '#c42348',
-              }
-            : {},
+          error ? formStyles.inputContainerError : {}, // La variable error definirá que estilo queremos cuando haya un error
         ])}>
         <View style={formStyles.iconContainer}>
           <MaterialIcons
@@ -178,11 +169,7 @@ const Input: FC<InputProps> = ({
         <TextInput
           style={StyleSheet.flatten([ // Agregamos el flatten para combinar dos o más objetos de estilo
             formStyles.input,
-            error // La variable error definirá que estilo queremos cuando haya un error
-              ? {
-                  color: '#c42348',
-                }
-              : {},
+            error ? formStyles.errorTextColor : {}, // La variable error definirá que estilo queremos cuando haya un error
           ])}
           placeholder={placeholder ?? name}
           placeholderTextColor="#75757F"
@@ -196,3 +183,109 @@ const Input: FC<InputProps> = ({
   );
 };
 ```
+
+Hay algunos estilos que no teníamos antes, aquí los puedes ver a detalle: 
+
+```tsx
+const formStyles = StyleSheet.create({
+  container: {
+    marginHorizontal: 48,
+    marginBottom: 8,
+  },
+  label: {
+    color: 'black',
+    fontSize: 12,
+    marginLeft: 15,
+  },
+  inputContainer: {
+    backgroundColor: '#A5D1FA',
+    height: 30,
+    borderRadius: 15,
+    paddingRight: 15,
+    justifyContent: 'center',
+    flexDirection: 'row',
+    width: '100%',
+  },
+  iconContainer: {
+    height: 30,
+    width: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  input: {
+    width: '80%',
+  },
+  errorMessage: {
+    color: '#c42348',
+    fontSize: 12,
+    marginLeft: 15,
+  },
+  inputContainerError: {
+    borderWidth: 2,
+    borderColor: '#c42348',
+  },
+  errorTextColor: {
+    color: '#c42348',
+  },
+});
+```
+
+Habiendo ya modificado nuestro componente input, usemos los nuevos props de estilo que le agregamos. Los activaremos y desactivaremos con lógica que nos provee formik como veremos a continuación. Primero recordemos como lucen nuestros Inputs:
+
+```tsx
+<Input
+    icon="mail-outline"
+    name="Email"
+    value={signInForm.values.email}
+    onChangeText={signInForm.handleChange('email')}
+/>
+<Input
+    icon="vpn-key"
+    name="Password"
+    value={signInForm.values.password}
+    onChangeText={signInForm.handleChange('password')}
+/>
+```
+
+A cada uno habrá que agregarle tres propiedades:
+- onBlur
+- error
+- errorMessage
+
+Y los setearemos de la siguiente manera:
+
+```tsx
+<Input
+    icon="mail-outline"
+    name="Email"
+    value={signInForm.values.email}
+    onChangeText={signInForm.handleChange('email')}
+    onBlur={signInForm.handleBlur('email')}
+    error={signInForm.touched.email && !!signInForm.errors.email}
+    errorMessage={signInForm.errors.email}
+/>
+<Input
+    icon="vpn-key"
+    name="Password"
+    value={signInForm.values.password}
+    onChangeText={signInForm.handleChange('password')}
+    onBlur={signInForm.handleBlur('password')}
+    error={signInForm.touched.password && !!signInForm.errors.password}
+    errorMessage={signInForm.errors.password}
+/>
+```
+
+El prop `onBlur` recibe una funcíon cuando el evento `Blur` suceda, esto significa que esta función se va a ejecutar cada vez que el usuario cambie el `focus` de ese campo a cualquier otro. Basicamente se activa la función cuando `focus` pasa de `true` a `false`. Y la función está dada por formik, hace muchas cosas esa función, la que nos interesa actualmente es que valida inmediatamente el campo.
+
+El prop `error` fue creado por nosotros, y queremos que sea verdadero solo cuando el campo se haya tocado y formik tenga un error en su memoria de ese mismo campo, es por eso que lo igualamos a `signInForm.touched.password && !!signInForm.errors.password`.
+
+El prop `errorMessage` también fue definido por nosotros, y representa un string que renderizaremos al usuario cuando exista un error, tomemos ventaja de los errores que ya habiamos seteado en el esquema de validación de Yup.
+
+¡Esto fué todo del lado del código!
+
+Si por algún motivo no pudiste seguir la explicación, aquí tienes los dos commits en los que cambiamos el código al estado actual.
+
+1. [Estados de error en ambos inputs del SignInForm](https://github.com/SantiagoSiordia/ExampleApp/commit/54e1a5ab55b294932c65ecb8378e8229984ffd68)
+2. [Estilos en sus propios objetos](https://github.com/SantiagoSiordia/ExampleApp/commit/f63481f55cc03bd2945dd88b141b4a005fb81b98)
+
+¿Cómo se ve ahora nuestra App? Veamos
