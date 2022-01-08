@@ -289,3 +289,24 @@ Si por algún motivo no pudiste seguir la explicación, aquí tienes los dos com
 2. [Estilos en sus propios objetos](https://github.com/SantiagoSiordia/ExampleApp/commit/f63481f55cc03bd2945dd88b141b4a005fb81b98)
 
 ¿Cómo se ve ahora nuestra App? Veamos
+
+El estado inicial de la app luce de la misma manera, no debió haber cambiado nada, ¿cierto?
+
+![Initial state](./assets/InitialState.png)
+
+Veamos que sucede cuando ingresamos un email invalido esta vez, y después de ingresarlo nos vamos al campo de la contraseña. 
+
+![Not valid email](./assets/NotValidEmail.png)
+
+Podemos notar una diferencia obvia, y es algo que esperabamos ¿no?, que si no es válido el email, nos diga de inmediato que no es válido, en vez de que nunca habilite el botón de Sing in.
+
+Lo mismo pasaría si llenamos de manera incorrecta el campo de password o no lo llenamos en absoluto:
+
+![Required password](./assets/RequiredPassword.png)
+![Too short password](./assets/TooShortPassword.png)
+![Too long password](./assets/TooLongPassword.png)
+
+Y se compone todo cuando haces lo que se espera que pongas en los inputs.
+
+![Valid email](./assets/ValidEmail.png)
+![Valid password](./assets/ValidPassword.png)
