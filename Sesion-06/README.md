@@ -42,8 +42,11 @@ Habiendo refactorizado los formularios de nuestra app de ejemplo podemos notar q
 
 Habiendo completado el segundo ejemplo, podemos intentar mejorar aún más la experiencia del usuario en nuestro [tercer ejemplo](./Ejemplo-03).
 
+Para este punto ya debemos estar bastante familiarizados con las herramientas de Formik, aunque no hemos visto todas. En el [Reto 02](./Reto-02) practicaremos lo que ya sabemos sobre Formik.
+
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`EJEMPLO 3`**](./Ejemplo-03)
+- [**`RETO 2`**](./Reto-02)
 
 ---
 
