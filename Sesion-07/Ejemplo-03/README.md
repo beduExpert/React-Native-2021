@@ -40,6 +40,6 @@ Usaremos la [API de Rick & Morty](https://rickandmortyapi.com/) para este ejempl
 
 Agregaremos algunos archivos con estilos, copialos y pegalos para que no nos entretengamos tanto en esta parte, los cambios completos pueden ser vistos en este [link](https://github.com/SantiagoSiordia/ExampleApp/commit/dd5aadff9ba8a50c42cc47996cba030672b187fd).
 
-VIDEO AQUI
+https://user-images.githubusercontent.com/56652644/148701166-e7f3e780-2648-4fcc-975f-b0a104fe4b86.mov
 
 Podemos ver que lo que hace esta nueva pantalla es renderizar algunas cartas de personajes de Rick & Morty, pero no tenemos estas cartas guardadas en alguna parte de nuestra app.
