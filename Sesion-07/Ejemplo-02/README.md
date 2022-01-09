@@ -212,3 +212,6 @@ const handleToggleTheme = () => dispatch(toggleTheme());
 ```
 
 Después de haber hecho eso, podemos ver en el siguiente video
+
+https://user-images.githubusercontent.com/56652644/148669716-3586d33d-d363-47e0-b3f7-be67ce90d2e4.mov
+
