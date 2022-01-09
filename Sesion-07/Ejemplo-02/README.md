@@ -64,6 +64,8 @@ const styles = StyleSheet.create({
 });
 ```
 
+### Consumir Redux
+
 Agregaremos la lógica necesaria para consumir el `theme` que guardamos en redux. Así que envolvamos la a `App.tsx` en el Provider de Redux.
 
 ```tsx
@@ -192,6 +194,8 @@ Cuando corremos la app en este estado, podemos ver que luce de la siguiente mane
 
 ¡Muestra el tema actual de la app! Eso es todo.
 
+### Modificando nuestro Store
+
 Estaría cool que pudieramos cambiarlo con presionar un botón, por suerte para nosotros, sí se puede, agregaremos nuestro componente `SubmitButton` a la pantalla:
 
 ```tsx
@@ -211,7 +215,105 @@ const dispatch = useDispatch();
 const handleToggleTheme = () => dispatch(toggleTheme());
 ```
 
-Después de haber hecho eso, podemos ver en el siguiente video
+Después de haber hecho eso, podemos ver en el siguiente video como debería comportarse nuestra pantalla:
 
 https://user-images.githubusercontent.com/56652644/148669716-3586d33d-d363-47e0-b3f7-be67ce90d2e4.mov
 
+Estaría cool que pudiera tambien cambiar los colores de la pantalla. Eso haremos. Empezaremos por modificar un poco el reductor de preferences, para tomar ventaja de los tipos de typescript.
+
+
+En `src/features/redux/preferences.ts`:
+```tsx
+import { createSlice } from '@reduxjs/toolkit';
+
+export type preferencesStateType = {
+  theme: 'light' | 'dark';
+};
+
+export const initialState: preferencesStateType = {
+  theme: 'light',
+};
+
+export const preferencesSlice = createSlice({
+  name: 'preferences',
+  initialState,
+  reducers: {
+    toggleTheme: state => {
+      state.theme = state.theme === 'light' ? 'dark' : 'light';
+    },
+  },
+});
+
+export const { toggleTheme } = preferencesSlice.actions;
+```
+
+Y ahora, agregaremos algo de lógica para el tema:
+
+En `src/screens/QueryScreen.tsx`:
+
+```tsx
+import React, { FC } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { useDispatch } from 'react-redux';
+import { SubmitButton, toggleTheme, useAppSelector } from '..';
+
+export const QueryScreen: FC = () => {
+  const theme = useAppSelector(state => state.preferences.theme);
+
+  const dispatch = useDispatch();
+
+  const handleToggleTheme = () => dispatch(toggleTheme());
+
+  return (
+    <View
+      style={StyleSheet.flatten([
+        styles.container,
+        themeStyles[theme].container,
+      ])}>
+      <Text style={StyleSheet.flatten([themeStyles[theme].text])}>
+        Query Screen
+      </Text>
+      <Text style={StyleSheet.flatten([themeStyles[theme].text])}>
+        Current theme: {theme}
+      </Text>
+      <SubmitButton text="Toggle theme" onPress={handleToggleTheme} />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+const themeStyles: Record<'light' | 'dark', any> = {
+  light: StyleSheet.create({
+    container: {
+      backgroundColor: 'white',
+    },
+    text: {
+      color: 'black',
+    },
+  }),
+  dark: StyleSheet.create({
+    container: {
+      backgroundColor: '#01172f',
+    },
+    text: {
+      color: 'white',
+    },
+  }),
+};
+```
+
+El comportamiento debería ser el siguiente:
+
+AQUÍ DEBERIA IR EL VIDEO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+### ¿Y qué es un estado global?
+
+Redux justamente salió para manejar cualquier tipo de estado que fuera compartido por diferentes partes de las aplicaciones. Y Redux funciona bien con cosas como esta, el tema de una app, variables sencillas, que no tengan mucha lógica por detrás. Pero cuando hablamos del complejo estado de un servidor, Redux se queda muy corto, dado que el código que se tiene que hacer en Redux para cachear datos, fetchearlos, recolectar la basura, y todo lo demás, es mucho, son muchas funciones para un solo set de datos, es por eso que en el siguiente ejemplo usaremos otra manera de hacer las cosas.
