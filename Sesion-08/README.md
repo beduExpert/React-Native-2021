@@ -1,4 +1,4 @@
-## Sesión 8: Nombre de sesión 🤖
+## Sesión 8: Debuggeando apps de React Native
 
 <img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
@@ -14,8 +14,6 @@ Android Studio te ayudará a desarrollar tu app más productivamente a escala. A
 
 ---
 
-<img src="images/tools.png" align="right" height="90"> 
-
 #### <ins>Tema 1</ins>
 
 Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
@@ -24,8 +22,6 @@ Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, 
 
 ---
 
-<img src="images/structure.png" align="right" height="90"> 
-
 #### <ins>Tema 2</ins>
 
 Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
@@ -33,8 +29,6 @@ Una vez que el proyecto está creado, la estructura o forma en la que se organiz
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
 ---
-
-<img src="images/emulator.jpg" align="right" height="90"> 
 
 #### <ins>Tema 3</ins>
 
@@ -45,8 +39,6 @@ Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un 
  + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
 - [**`RETO 2`**](./Reto-02)
 ---
-
-<img src="images/chaomi.png" align="right" height="110"> 
 
 #### <ins>Tema 4</ins>
 
@@ -64,8 +56,4 @@ Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto d
 
 - [**`POSTWORK SESIÓN 1`**](./Postwork/)
 
-<br/>
-
-
-</div>
 
