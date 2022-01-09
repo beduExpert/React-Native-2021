@@ -62,10 +62,12 @@ El objeto `query` consiste de algunos estados importantes mencionados en la docu
 
 Y con esta información es suficiente para empezar a modificar nuestra app.
 
-Veamos un poco más de esta librería en el [Ejemplo 02](./Ejemplo-02)
+Veamos un poco más del estado global con Redux para recordarlo experimentalmente en el [Ejemplo 02](./Ejemplo-02).
+
+Habiendo refrescado nuestras memorias, ahora usemos React Query en el [Ejemplo 03](./Ejemplo-03).
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
+- [**`EJEMPLO 3`**](./Ejemplo-03)
   
 ---
 
