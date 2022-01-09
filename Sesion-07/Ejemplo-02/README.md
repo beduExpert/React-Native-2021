@@ -312,7 +312,7 @@ const themeStyles: Record<'light' | 'dark', any> = {
 
 El comportamiento debería ser el siguiente:
 
-AQUÍ DEBERIA IR EL VIDEO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+https://user-images.githubusercontent.com/56652644/148671228-2cebf97b-339a-4283-a2fc-1116e35c421e.mov
 
 ### ¿Y qué es un estado global?
 
