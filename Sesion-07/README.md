@@ -1,10 +1,10 @@
 ## Sesión 7: Consumo de APIs 🛍
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos 🎯
 
+- Refactorizar código de manera más rápida.
 - Consumir APIs de manera asíncrona.
 - Aprender a manejar el estado del servidor.
 ### 2. Contenido 📘
@@ -25,12 +25,48 @@ Veamos cómo lograr todo esto en el [Ejemplo 01](./Ejemplo-01).
 
 ---
 
-#### <ins>Tema 2</ins>
+#### <ins>Tema 2: React Query</ins>
 
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
+Esta librería se describe a si misma como la librería faltante de React para fetching de datos.
+
+**React query** es una capa delgada de caching que vive en nuestras apps. Ya que es una librería de fetcheado de datos, es agnóstica a cómo decidamos fetchear esos datos. La única cosa que React Query necesita saber es la promesa devuelta por Axios, Fetch o cualquier otra manera de fetchear datos.
+
+The two main concepts of **React Query** are queries and mutations. While queries deal with fetching data, mutations handle modifying data on the server.
+
+Los dos conceptos principales de **React Query** son [`queries`](https://react-query.tanstack.com/guides/queries) y [`mutations`](https://react-query.tanstack.com/guides/mutations).
+
+**React query** exporta un hook llamado `useQuery` para manejar queries. `useQuery` toma dos parámetros. El primer parámetro es un identificador ÚNICO para describir que es lo que estamos fetcheando. El segundo parámetro es la función para fetchear datos - siempre es una función asíncrona que devuelve datos o un error.
+
+Veamos el siguiente código:
+
+```ts
+import { useQuery } from 'react-query';
+import axios from 'axios';
+
+const fetchPosts = async () => {
+    const { data } = await axios.get('https://jsonplaceholder.typicode.com/posts');
+    return data;
+};
+
+const usePosts = () => useQuery('posts', fetchPosts);
+```
+
+El hook `useQuery` devuelve un objeto `query` y también maneja todo el ciclo de vida al rededor de nuestro fetching así que no tenemos que preocuparnos por usar un hook `useEffect`.
+
+El objeto `query` consiste de algunos estados importantes mencionados en la documentación oficial de [React Query](https://react-query.tanstack.com/guides/queries).
+
+- `isLoading` o ` status === 'loading'` - El query no tiene datos y esta fetcheando.
+- `isError` o `status === 'error'` — El query ha encontrado un error.
+- `isSuccess` o `status === 'success'` — El query fue exitoso y tiene datos.
+- `isIdle` o `status === 'idle'` — El query está deshabilitado
+
+Y con esta información es suficiente para empezar a modificar nuestra app.
+
+Veamos un poco más de esta librería en el [Ejemplo 02](./Ejemplo-02)
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
+  
 ---
 
 #### <ins>Tema 3</ins>
