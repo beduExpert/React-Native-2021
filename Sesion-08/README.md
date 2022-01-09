@@ -1,16 +1,15 @@
 ## Sesión 8: Debuggeando apps de React Native
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart: 
+### 1. Objetivos :dart:
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Desarrollar apps más rápido con React Natie
+- Instalar Varias herramientas de debuggeo
 
-### 2. Contenido :blue_book:
+### 2. Contenido 📘
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+Flipper, RNDebugger y Reactotron son herramientas muy importantes para nosotros que desarrollamos en React Native, nos ayudan a muchas cosas durante la etapa de desarrollo de nuestras app. Lo más importante que nos permiten hacer es ver el estado actual de toda la memoria de nuestra app y poder inspeccionar el arból de componentes. Existen algunas diferencias entre ellas y podremos verlas experimentalmente en esta sesion
 
 ---
 
