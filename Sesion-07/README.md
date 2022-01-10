@@ -6,7 +6,7 @@
 
 - Refactorizar código de manera más rápida.
 - Consumir APIs de manera asíncrona.
-- Aprender a manejar el estado del servidor.
+- Manejar el estado del servidor.
 ### 2. Contenido 📘
 
 Constantemente en cualquier proyecto en React nos enfrentamos con el mismo problema: Consumir APIs. Consumir APIs no siempre es bien logrado en todos los proyectos, pero aquí aprenderemos a lograrlo!
