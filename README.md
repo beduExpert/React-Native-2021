@@ -29,11 +29,11 @@ En este proyecto desarrollaremos una app muy parecida a Twitter... ésta es llam
 
 Recuerda que React Native es una tecnología Front end. No procesa datos ni los almacena de la misma manera que un **servidor**. El código de React Native se ejecuta en un dispositivo móvil. Nuestro almacenamiento es límitado, y de ser posible no debemos utilizar mucho.
 
-El proyecto es una sugerencia de app, nos gustaría que en base a lo que a ti te guste hagas una app que cumpla con los requisitos de cada sesión, para esto el experto puede ayudarte sin problema alguno. A lo mejor puede no gustarte el diseño que se propone en las pantallas de la app sugerida, pero puedes crear tu propio diseño que el experto evaluará en complejidad y aprovará o modificará según sea el caso.
+El proyecto es una sugerencia de app, nos gustaría que en base a lo que a ti te guste hagas una app que cumpla con los requisitos de cada sesión, para esto el experto puede ayudarte sin problema alguno. A lo mejor puede no gustarte el diseño que se propone en las pantallas de la app sugerida, pero puedes crear tu propio diseño que el experto evaluará en complejidad y aprobará o modificará según sea el caso.
 
 El proyecto final incluye todo lo necesario para construir una app en React Native desde cero hasta estar listo para lanzarlo a ambas tiendas: AppStore y PlayStore.
 
-La app de Sweeter nos permite:
+La app de Sweeter nos permitirá:
 
 - Guardar información encriptada del usuario.
 - Actualizar información asíncrona en tiempo real.
