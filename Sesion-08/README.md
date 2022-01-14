@@ -17,7 +17,7 @@ Flipper, RNDebugger y Reactotron son herramientas muy importantes para nosotros 
 
 Deberemos instalar [Flipper](https://fbflipper.com/) para poder seguir este tema.
 
-Flipper es una plataform
+Flipper es una plataforma para debuggear apps en iOS, Android y React native. Puedes visualizar, inpeccionar y controlar las apps desde la interfaz de usuario simple. Y tiene algunas extensones muy útiles. Dirijámonos al [Ejemplo 01](./Ejempl-01) para aprender un poco más de como usarlo.
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
