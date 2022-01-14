@@ -25,7 +25,24 @@ Se tendrá una sesión dedicada a la instalación de todas estas herramientas.
 
 ## 💻 Proyecto
 
-Describir el proyecto en caso de que el módulo lo requiera **Obligatorio** .  (Borrar está linea una vez se hay leido)
+En este proyecto desarrollaremos una app muy parecida a Twitter... ésta es llamada Sweeter, donde hay amor en cada "Sweet".
+
+Recuerda que React Native es una tecnología Front end. No procesa datos ni los almacena de la misma manera que un **servidor**. El código de React Native se ejecuta en un dispositivo móvil. Nuestro almacenamiento es límitado, y de ser posible no debemos utilizar mucho.
+
+El proyecto es una sugerencia de app, nos gustaría que en base a lo que a ti te guste hagas una app que cumpla con los requisitos de cada sesión, para esto el experto puede ayudarte sin problema alguno. A lo mejor puede no gustarte el diseño que se propone en las pantallas de la app sugerida, pero puedes crear tu propio diseño que el experto evaluará en complejidad y aprovará o modificará según sea el caso.
+
+El proyecto final incluye todo lo necesario para construir una app en React Native desde cero hasta estar listo para lanzarlo a ambas tiendas: AppStore y PlayStore.
+
+La app de Sweeter nos permite:
+
+- Guardar información encriptada del usuario.
+- Actualizar información asíncrona en tiempo real.
+- Tener formularios controlados, validados y seguros.
+- Navegar entre diferentes pantallas.
+- Recordar preferencias del usuario, tal como el tema preferido (light o dark).
+- Llevar un sistema de almacenamiento de datos estructurado.
+
+Y al haber completado el proyecto y adquirido los conocimientos de él, podemos crear literalmente cualquier aplicación teniendo el tiempo suficiente para el desarrollo, todo esto tomando en cuenta que React Native es la tecnología Front End de una app móvil.
 
 ## :bookmark_tabs: Sesiones 
 
