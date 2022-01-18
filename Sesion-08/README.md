@@ -17,7 +17,7 @@ Flipper, RNDebugger y Reactotron son herramientas muy importantes para nosotros 
 
 En este primer tema habrá que ver las herramientas más útiles que vienen ya de fábrica en una app de React Native. Vayamos al [Ejemplo 01](./Ejemplo-01) para saber un poco más de que hablamos.
 
-
+- [**`EJEMPLO 1`**](./Ejemplo-01)
 
 ---
 #### <ins>Tema 2: Flipper</ins>
@@ -34,12 +34,16 @@ Flipper es una plataforma para debuggear apps en iOS, Android y React native. Pu
 
 Deberemos instalar [React Native debugger](https://github.com/jhen0409/react-native-debugger) y tener una app en React native para poder debuggearla aquí. 
 
+- [**`EJEMPLO 3`**](./Ejemplo-03)
+
 ---
 
 #### <ins>Tema 4: Reactotron</ins>
 
-Después de haber instalado [Reactotron](https://github.com/infinitered/reactotron) podemos proceder al Ejemplo 04
+Después de haber instalado [Reactotron](https://github.com/infinitered/reactotron) podemos proceder al [Ejemplo 04](./Ejemplo-04)
 
+- [**`EJEMPLO 4`**](./Ejemplo-04)
+- 
 ---
 
 ### 3. Postwork :memo:
