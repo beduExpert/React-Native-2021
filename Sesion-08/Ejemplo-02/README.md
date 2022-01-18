@@ -1,15 +1,51 @@
-# Ejemplo # - Nombre del ejemplo
+# Ejemplo 02 - Flipper
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+- Instalar Flipper
+- Experimentar como debuggear la app de manera más sencilla
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el ejemplo.
->Si no es necesario, puedes borrar esta nota.
+Después de haber instalado Flipper. Podemos empezar una demotración de como funciona.
 
-Aquí se debe agregar el desarrollo del ejemplo
+Vamos a crear una nueva app para debuggear y desarrollar más rápido con flipper, para este momento, tenemos muy claro como empezar una app, ¿Cierto?:
+
+```bash
+npx react-native init Coins --template react-native-template-typescript
+```
+
+![Coins created](./assets/CoinsCreated.png)
+
+Habilitemos `hermes` en `android/app/build.gradle`:
+
+```gradle
+project.ext.react = [
+    enableHermes: true,  // clean and rebuild if changing
+]
+```
+
+Ahora podemos correr la app en Android:
+
+```bash
+yarn android
+```
+
+Podemos ver inmediatamente muchos los logs de la app.
+
+![Coins running](./assets/CoinsRunning.png)
+
+Una vez que varamos al árbol de componentes podemos ver algo muy similar o igual a esto:
+
+![DevTools](./assets/DevTools.png)
+
+Si tenemos problemas conectando el árbol en Android, debería servirnos correr el comando
+
+```bash
+adb reverse tcp:8097 tcp:8097
+```
+
+No siempre tendremos a un maestro junto a nosotros, deberíamos decirte que ese comando puede ser encontrado si se busca el error que sale en Flipper cuando no funciona algo bien, ese mismo comando se pudo haber sacado de [este comentario en un thread de issues de Github](https://github.com/facebook/flipper/issues/1000#issuecomment-617512233).
+
+Inspeccionemos todos los componentes que hay por ahí.
 
