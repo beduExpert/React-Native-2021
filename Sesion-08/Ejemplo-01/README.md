@@ -57,5 +57,4 @@ YellowBox.ignoreWarnings(['Warning: ...']);
 
 El inspector es a veces una herramienta muy útil. Puedes usarlo al abrir el DevMenu y seleccionando "Show Inspector". Mostrará un overlay ehn donde puedes presionar sobre cualquier elemento de la UI para obtener información de él. 
 
-AQUÍ VA EL VIDEO DE EL REACT NATIVE INSPECTOR!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+https://user-images.githubusercontent.com/56652644/149891119-4fade349-342c-48d3-9d94-14bfd35012ec.mov
