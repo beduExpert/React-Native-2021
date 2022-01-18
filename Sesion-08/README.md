@@ -43,7 +43,7 @@ Deberemos instalar [React Native debugger](https://github.com/jhen0409/react-nat
 Después de haber instalado [Reactotron](https://github.com/infinitered/reactotron) podemos proceder al [Ejemplo 04](./Ejemplo-04)
 
 - [**`EJEMPLO 4`**](./Ejemplo-04)
-- 
+
 ---
 
 ### 3. Postwork :memo:
