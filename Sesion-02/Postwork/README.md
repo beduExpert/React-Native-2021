@@ -1,4 +1,4 @@
-# Sesión 2: 
+# Sesión 2: Componentes y estilos
 
 ## 🎯 Objetivos
 

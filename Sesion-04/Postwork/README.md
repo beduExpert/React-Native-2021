@@ -1,4 +1,4 @@
-# Sesión 4: 
+# Sesión 4: Navegación en React Native
 
 ## :dart: Objetivos
 
