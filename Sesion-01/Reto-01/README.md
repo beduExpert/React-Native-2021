@@ -1,4 +1,12 @@
-# Instrucciones
+# Reto 01 - Creando nuestra primera app solos
+
+## Objetivo
+
+- Aplicar los comandos aprendidos.
+- Familiarizarnos con la creación de apps.
+- Resolver nuestros primeros bugs de React Native solos.
+
+## Desarrollo
 
 Para este reto crearás una app con una pantalla que tenga un `input`, donde el usuario teclee solamente numeros.
 Con el número que el usuario ingrese vamos a hacer algunas operaciones matemáticas y las desplegaremos en la pantalla.
