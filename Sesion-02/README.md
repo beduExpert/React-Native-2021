@@ -156,10 +156,6 @@ Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto d
 
 - [**`POSTWORK SESIÓN 1`**](./Postwork/)
 
-<br/>
-
-
-</div>
 
 
 
