@@ -53,4 +53,4 @@ Para este punto ya debemos estar bastante familiarizados con las herramientas de
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
+- [**`POSTWORK SESIÓN 6`**](./Postwork/)

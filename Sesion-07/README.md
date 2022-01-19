@@ -74,4 +74,4 @@ Habiendo refrescado nuestras memorias, ahora usemos React Query en el [Ejemplo 0
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
+- [**`POSTWORK SESIÓN 7`**](./Postwork/)

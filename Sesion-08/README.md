@@ -50,6 +50,6 @@ Después de haber instalado [Reactotron](https://github.com/infinitered/reactotr
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
+- [**`POSTWORK SESIÓN 8`**](./Postwork/)
 
 

@@ -62,7 +62,7 @@ Habiendo dicho eso, vayamos a nuestro [primer reto](./Reto-01).
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
+- [**`POSTWORK SESIÓN 3`**](./Postwork/)
 
 <br/>
 
