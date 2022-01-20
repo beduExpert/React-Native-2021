@@ -1,4 +1,4 @@
-# Reto 1 - Layouts complejos
+# Reto 1 - Controlando layouts complejos
 
 ## Objetivo
 

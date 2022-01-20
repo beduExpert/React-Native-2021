@@ -1,4 +1,4 @@
-# Ejemplo 1 - Layout complejo
+# Ejemplo 1 - Layouts complejo
 
 ## Objetivo
 
