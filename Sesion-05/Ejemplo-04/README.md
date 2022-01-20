@@ -1,4 +1,4 @@
-# Ejemplo 3 - Secure store
+# Ejemplo 4 - Secure store
 
 Vamos a instalar y a usar esta librería en un proyecto propio de react native.
 
