@@ -1,4 +1,11 @@
-# Instrucciones
+# Ejemplo 02 - CSS a React Native StyleSheet (Parte 1/2)
+
+## Objetivo
+
+- Replicar estilos de CSS en RN
+- Estilizar nuestros componentes
+
+## Desarrollo
 
 Transformaremos los estilos de CSS a estilos de React native Stylesheet.
 
