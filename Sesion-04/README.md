@@ -34,7 +34,7 @@ Exploremos un [ejemplo](https://github.com/react-navigation/react-navigation/tre
 
 ¿Qué es navegación y que se puede lograr con esta librería?
 
-Es una pregunta que resolveremos viendo el primer ejemplo de esta lección.
+Es una pregunta que resolveremos viendo el [Ejemplo 01](./Ejemplo-01) de esta lección.
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
@@ -42,34 +42,16 @@ Es una pregunta que resolveremos viendo el primer ejemplo de esta lección.
 
 #### <ins>Tema 2: Implementando nuestra primera app con navegación.</ins>
 
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
+Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app. Veámoslo en el [Ejemplo 02](./Ejemplo-02).
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
 ---
 
-<img src="images/emulator.jpg" align="right" height="90"> 
-
 #### <ins>Tema 3</ins>
 
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
+TODO: Tema 3 y reto
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 2`**](./Reto-02)
----
-
-<img src="images/chaomi.png" align="right" height="110"> 
-
-#### <ins>Tema 4</ins>
-
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
-
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 3`**](./Reto-03)
 ---
 
 ### 3. Postwork :memo:
@@ -78,8 +60,4 @@ Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto d
 
 - [**`POSTWORK SESIÓN 4`**](./Postwork/)
 
-<br/>
-
-
-</div>
 
