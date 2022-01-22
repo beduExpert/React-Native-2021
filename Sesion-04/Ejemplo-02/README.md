@@ -210,9 +210,7 @@ function DetailsScreen({ navigation }) {
 
 Podemos ver esto en [Snack](https://snack.expo.dev/@santiagosiordia/same-route-multiple-times).
 
----
-TODO: VIDEO DE SNACK AQUI 
----
+https://user-images.githubusercontent.com/56652644/150623326-8b28568b-9f80-481f-a07f-59f60c2bf715.mov
 
 ### Ir para atrás
 
