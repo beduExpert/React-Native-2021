@@ -1,15 +1,12 @@
-# Reto # - Nombre del reto
+# Reto 1 - App con navegación drawer
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+- Crear una app con navegación de Drawer
+- Familiarizarnos con la navegación de React Navigation experimentalmente
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
+Deberás crear una nueva app con el nombre que gustes.
 
-Aquí se debe agregar el desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
-
+Esta app deberá tener tres simples pantallas con diferente nombre, no es necesario ponerle algún tipo de estilo en específico. Recordemos que el único objetivo es practicar nuestras habilidades con la navegación con Drawer.

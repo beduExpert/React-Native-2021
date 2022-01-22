@@ -45,12 +45,16 @@ Es una pregunta que resolveremos viendo el [Ejemplo 01](./Ejemplo-01) de esta le
 Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app. Veámoslo en el [Ejemplo 02](./Ejemplo-02).
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
 ---
 
-#### <ins>Tema 3</ins>
+#### <ins>Tema 3: Configurando el header bar</ins>
 
-TODO: Tema 3 y reto
+Veamos a profundidad que es lo que se puede hacer con el header en esta librería de navegación con el [Ejmplo 03](./Ejemplo-03).
+
+Después de saber todo esto, creemos una app con navegación en nuestro [único Reto](./Reto-01) de la sesión.
+
+- [**`EJEMPLO 3`**](./Ejemplo-03)
+- [**`RETO 1`**](./Reto-01)
 
 ---
 
