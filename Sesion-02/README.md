@@ -18,7 +18,7 @@ El estilo es una parte muy importante en React native. React native es básicame
 
 <img src="images/tools.png" align="right" height="90"> 
 
-#### <ins>StyleSheet</ins>
+#### <ins>Tema 1: StyleSheet</ins>
 
 StyleSheet es una abstracción de lo que es una CSS StyleSheet
 
@@ -70,7 +70,7 @@ Tips para la calidad del código:
 
 <img src="assets/StyleSheet.png" align="right" height="90"> 
 
-#### <ins>StyleSheet vs Objeto plano (plain object)</ins>
+#### <ins>Tema 2: StyleSheet vs Objeto plano (plain object)</ins>
 
 Hay algo muy importante que debemos aclarar aquí... ¿Hay difencia al usar `StyleSheet.create({ ...styleProps })` a solamente `{ ...styleProps }`?
 
@@ -125,7 +125,7 @@ Este comentario explica que tiene beneficios en calidad de código y en desempe�
 
 <img src="assets/CSS.png" align="right" height="90"> 
 
-#### <ins>CSS vs StyleSheet</ins>
+#### <ins>Tema 3: CSS vs StyleSheet</ins>
 
 Veamos esta imagen comparativa:
 
@@ -139,6 +139,14 @@ Al terminar ese ejemplo, veamos algo mucho más complejo. Pasemos al [siguiente 
 
 - [**`Ejemplo 2`**](./Ejemplo-02)
 - [**`Ejemplo 3`**](./Ejemplo-03)
+
+---
+
+#### <ins>Tema 4: StyleSheet Puro</ins>
+
+Después de haber aprendido algo de StyleSheet vamos a practicar crear algo con nuestros conocimientos. Pasemos al [Reto 01](./Reto-01) y veamos de que trata.
+
+- [**`Reto 1`**](./Reto-01)
 
 ---
 
