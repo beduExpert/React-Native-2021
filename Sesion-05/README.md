@@ -44,14 +44,20 @@ Vamos a crear una app con Context API en nuestro [tercer ejemplo](./Ejemplo-03).
 
 #### <ins>Tema 3: Secure Store</ins>
 
-`expo-secure-store` nos da una manera de encriptar y guardar de manera segura pares key-value localmente en el dispositivo.  
+`expo-secure-store` nos da una manera de encriptar y guardar de manera segura pares key-value localmente en el dispositivo, como lo podemos ver en el [Ejemplo 04](./Ejemplo-04)
+
+Habiendo completado el ejemplo 4, vayamos a aplicar nuestros conocimientos en el [Reto 01](./Reto-01) de esta sesión.
 
 - [**`EJEMPLO 4`**](./Ejemplo-04)
+- [**`Reto 1`**](./Reto-01)
 
 ---
 
 #### <ins>Tema 4: Async Storage</ins>
 
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
+Para terminar con los diferentes lugares de almacenamiento, veamos como usar nuestro async storage en el [Ejemplo 05](./Ejemplo-05).
 
-// TODO: Complete this subject
+Después de haber visto los métodos básicos del Async Storage, procedamos al [Reto 02](./Reto-02).
+
+- [**`EJEMPLO 5`**](./Ejemplo-05)
+- [**`Reto 2`**](./Reto-02)
