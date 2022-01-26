@@ -57,7 +57,6 @@ Habiendo completado el ejemplo 4, vayamos a aplicar nuestros conocimientos en el
 
 Para terminar con los diferentes lugares de almacenamiento, veamos como usar nuestro async storage en el [Ejemplo 05](./Ejemplo-05).
 
-Después de haber visto los métodos básicos del Async Storage, procedamos al [Reto 02](./Reto-02).
+Después de ver el Ejemplo 05, podemos notar la similitud en guardardo y lectura de datos entre el Async Storage y Secure Store, la experiencia del desarrollador es la misma, de tal manera que si quisieras guardar datos en el async storage solo sería necesario cambiar los métodos de guardado de la app que hicimos en el [Reto 01](./Reto-01).
 
 - [**`EJEMPLO 5`**](./Ejemplo-05)
-- [**`Reto 2`**](./Reto-02)
