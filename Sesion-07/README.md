@@ -66,10 +66,14 @@ Veamos un poco más del estado global con Redux para recordarlo experimentalment
 
 Habiendo refrescado nuestras memorias, ahora usemos React Query en el [Ejemplo 03](./Ejemplo-03).
 
+Para practicar lo aprendido, vayamos al [Reto 01](./Reto-01).
+
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`EJEMPLO 3`**](./Ejemplo-03)
+- [**`Reto 1`**](./Reto-01)
   
 ---
+
 ### 3. Postwork :memo:
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
