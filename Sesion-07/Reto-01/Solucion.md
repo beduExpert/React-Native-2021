@@ -174,7 +174,7 @@ De tal manera que ahora nuestra app se debe ver de la siguiente forma:
 
 Y aquí podemos ver un vídeo de como se ve la app cuando scrolleas hacia abajo.
 
-
+https://user-images.githubusercontent.com/56652644/151649561-8104607e-6d76-4ebe-aade-cdbebe6d3d90.mov
 
 ## Conclusión
 
