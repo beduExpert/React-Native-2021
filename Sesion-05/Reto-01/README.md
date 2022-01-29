@@ -23,7 +23,7 @@ Usaremos TypeScript, así que aseguremonos de usar Interfaces y Tipos en todas l
 
 Lo que hace la app es simplemente tener dos pantallas para que el usuario pueda "Ingresar" o "Hacer pagos". Todo esto es **simulado.**
 
-Cuando el usuario presiona el botón de "Sign in" o "Pay". Además de loggear "Ingresado" y "Pagado" a la consola, guardaremos sus datos en la memoria de Expo Secure Store.
+Cuando el usuario presiona el botón de "Sign in" o "Pay" además de loggear "Ingresado" y "Pagado" a la consola, guardaremos sus datos en la memoria de Expo Secure Store.
 
 Tendremos una tercera pantalla en la que en la pantalla desplegaremos los objetos guardados. Usa el tipo de navegación con el que te sientas más comodo para navegar entre estas pantallas. Puedes repasar la [Sesión 05](../../Sesion-05) si no recuerdas algo de navegación.
 
