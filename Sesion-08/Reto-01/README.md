@@ -17,3 +17,8 @@ Revisa esta [lista de proyectos](https://github.com/ReactNativeNews/React-Native
 Elige por lo menos uno de ellos y los modificaras para que puedan ser debuggeados con los tres debuggers que hemos visto en esta sesión.
 
 Los inspeccionaras de todas partes y buscaras `Warnings` y `Errors`. Habrá que usar las técnicas que vimos en la sesión para encontrar estas fallas.
+
+
+## Solución
+
+Veamos un ejemplo de como podemos proceder con este reto en el [archivo de la solución](./Solucion.md).
