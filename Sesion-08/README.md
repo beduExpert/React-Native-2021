@@ -40,9 +40,12 @@ Deberemos instalar [React Native debugger](https://github.com/jhen0409/react-nat
 
 #### <ins>Tema 4: Reactotron</ins>
 
-Después de haber instalado [Reactotron](https://github.com/infinitered/reactotron) podemos proceder al [Ejemplo 04](./Ejemplo-04)
+Después de haber instalado [Reactotron](https://github.com/infinitered/reactotron) podemos proceder al [Ejemplo 04](./Ejemplo-04).
+  
+Sabemos ahora las diferentes maneras de debuggear una app móvil en React Native, pongámoslas en práctica en el [Reto 01](./Reto-01).
 
 - [**`EJEMPLO 4`**](./Ejemplo-04)
+- [**`RETO 01`**](./Reto-01)
 
 ---
 
