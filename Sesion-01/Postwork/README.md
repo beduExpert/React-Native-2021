@@ -11,6 +11,7 @@ Tal como lo hicimos en el Work, realizarás una app con la ayuda de React Native
 
 - Sabemos que una de las cosas más importantes al iniciar una app en React Native es decidir un nombre, elígelo bien ya que este nombre será el nombre de tu app hasta el final del curso. Hay maneras de cambiar el nombre, pero ninguna tan eficiente como no renombrar nunca tu app.
 - Esta app que trabajaremos hoy será usada en los futuros postworks. Estos postworks se refieren a la app como "Sweeter". Sweeter es el nombre que daremos de ejemplo para la app que desarrollamos en los postworks, puedes llamarla como tu gustes o puedes tomar este mismo nombre.
+- ¿Por qué se llama Sweeter nuestra app de ejemplo? Planeamos hacer una app inspirada en Twitter. Se elige twitter porque tiene la complejidad necesaria para aprender todo lo que react native ofrece.
 - Esta app, al terminar el curso, ¡será evaluada!
 - En futuros postworks también los diseños tendrán que ver con el nombre de tu app, en el caso de los ejemplos tendrán que ver con el nombre "Sweeter".
 - La app debe ser creada mediante React Native CLI.
