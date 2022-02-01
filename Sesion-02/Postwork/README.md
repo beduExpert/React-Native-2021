@@ -15,7 +15,7 @@ En el prework y work has revisado varios elementos que tienen que ver con el dis
 Agregaremos algunas cosas a esta app:
 
 - Debe tener renderización condicional para navegar entre componentes (Sweets, Likes, Followers y Photos)
-- Debes elegir una paleta diferente de colores a la de la app de ejemplo
+- Debes elegir una paleta diferente de colores, puede ser la de la app de ejemplo, o una paleta propia. Ayúdate de herramientas como [Coolors - The super fast color palettes generator!](https://coolors.co/)
 - Puedes hacer exactamente el diseño que te proponemos o puedes elegir alguno diferente, nos gusta la creatividad (:
 
 ### Imágenes de ejemplo
