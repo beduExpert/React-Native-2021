@@ -1,4 +1,4 @@
-# Ejemplo 2 - Alcance de la navegación.
+# Ejemplo 1 - Alcance de la navegación.
 
 ## Objetivo
 
